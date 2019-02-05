@@ -4,7 +4,7 @@ import '../styles/nav.css';
 
 const NavBar = () => (
   <section id='nav-bar'>
-    {/* <img className='logo' src={logo} alt='logo' /> */}
+    <img className='logo' src={logo} alt='logo' />
   </section>
 );
 

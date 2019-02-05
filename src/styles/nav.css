@@ -7,3 +7,11 @@
   z-index: 3;
   min-height: 500px;
 }
+
+.logo{ 
+  filter: brightness(0) invert(1);
+  display: block;
+  margin: 8px auto;
+  width: 24px;
+  height: auto;
+}
