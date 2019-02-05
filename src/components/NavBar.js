@@ -4,7 +4,11 @@ import '../styles/nav.css';
 
 const NavBar = () => (
   <section id='nav-bar'>
-    <img className='logo' src={logo} alt='logo' />
+    <div>
+      <img className='logo-image' src={logo} alt='logo' />
+      <p className='brand-name'>signalflowsean</p>
+    </div>
+    
   </section>
 );
 

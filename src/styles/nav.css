@@ -8,10 +8,27 @@
   min-height: 500px;
 }
 
-.logo{ 
+.logo-image{ 
   filter: brightness(0) invert(1);
   display: block;
   margin: 8px auto;
   width: 24px;
   height: auto;
+  margin-bottom: 0px;
+}
+
+.brand-name{ 
+  font-family: Geo;
+  text-align: center; 
+  color: white; 
+  font-size: 8px; 
+  margin-top: 0px; 
+}
+
+.brand-name:hover{ 
+  color:yellow; 
+}
+
+.logo-image:hover{ 
+  filter: drop-shadow(16px 16px 20px red) invert(75%);
 }
