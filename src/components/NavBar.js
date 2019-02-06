@@ -6,18 +6,18 @@ const navImages = [home, about, projects, contact];
 const socialMediaImages = [linkedin, github, twitter];
 
 const NavBar = () => (
-  <section id='nav-bar'>
+  <nav id='nav-bar'>
     <div>
       <img className='logo' src={logo} alt='logo' />
       <p className='brand-name'>signalflowsean</p>
     </div>
-    <nav className='nav-container'> 
+    <div className='nav-container'> 
       {navImages.map((image, i) => (
         <div key={i} className='nav-button-container'>
           <img key={i} src={image} className='nav-button' alt='nav-button' />
         </div>
       ))}
-    </nav>
+    </div>
     <ul className='social-media-list'>
         {socialMediaImages.map((image, i) => (
           <li key={i} className='social-media-list-item'>
@@ -26,7 +26,7 @@ const NavBar = () => (
         ))}
     </ul>
     
-  </section>
+  </nav>
 );
 
 export default NavBar; 

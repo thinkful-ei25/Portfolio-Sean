@@ -1,0 +1,11 @@
+.about-container{ 
+  position: relative;
+  left: 10%; 
+  height: 95vh; 
+}
+
+.about-img{ 
+  width: 90%; 
+  height: 95vh; 
+  filter:hue-rotate(-80deg) saturate(2) brightness(40%);
+}
