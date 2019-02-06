@@ -21,7 +21,7 @@ const NavBar = () => (
     </nav>
     <ul className='social-media-list'>
         {socialMediaImages.map((image, i) => (
-          <li className='social-media-list-item'>
+          <li key={i} className='social-media-list-item'>
             <img key={i} src={image} className='nav-button' alt='social-media'/>
           </li>
         ))}
