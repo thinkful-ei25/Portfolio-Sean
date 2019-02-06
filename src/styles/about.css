@@ -1,11 +1,30 @@
 .about-container{ 
   position: relative;
+  text-align: center;
   left: 10%; 
+  width: 90vw; 
   height: 95vh; 
 }
 
 .about-img{ 
-  width: 90%; 
-  height: 95vh; 
-  filter:hue-rotate(-80deg) saturate(2) brightness(40%);
+  width: 100%; 
+  height: 100%;  
+  filter:hue-rotate(-80deg) saturate(2) brightness(60%);
+}
+
+.about-text{ 
+  font-family: 'Cinzel', serif;
+  padding: 1%; 
+  font-size: 2.4vw; 
+  color: white; 
+  position: absolute;
+  z-index: 3;
+}
+
+.first-blurb{ 
+  top: 5%; 
+}
+
+.second-blurb{ 
+  top: 55%; 
 }
