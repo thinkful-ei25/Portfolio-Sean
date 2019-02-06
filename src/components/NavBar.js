@@ -20,13 +20,11 @@ const NavBar = () => (
       ))}
     </nav>
     <ul className='social-media-list'>
-      <li className='social-media-list-item'>
         {socialMediaImages.map((image, i) => (
-          <div key={i} className='nav-button-container'>
+          <li className='social-media-list-item'>
             <img key={i} src={image} className='nav-button' alt='social-media'/>
-          </div>
+          </li>
         ))}
-      </li>
     </ul>
     
   </section>
