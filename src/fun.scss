@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+$lightColor: #F5EE9E;
+$darkColor: #F49E4C;
+$bgColor: #AB3428;
+
+
+
+.fun {
+  font-family: "Monoton", Helvetica, sans-serif;
+  background: $bgColor;
+  letter-spacing: 5px;
+  display: inline;
+  font-size: 5vw;
+  text-transform: uppercase;
+  color: $darkColor;
+  
+  @media (min-width: 700px) {
+    font-size: 3vw;
+  }
+  
+  @media (min-width: 1400px) {
+    font-size: 30px;
+  }
+}
+
+@supports (-webkit-background-clip: text) {
+	.fun {
+		color: transparent;
+		background: linear-gradient(7deg, $lightColor 50%, $darkColor 0);
+		-webkit-background-clip: text;
+	}
+}
