@@ -1,74 +1,38 @@
-
-.about-container{ 
+.about-container {
   position: relative;
   text-align: center;
-  left: 10%; 
-  width: 90vw; 
-  height: 95vh; 
-}
+  left: 10%;
+  width: 90vw;
+  height: 95vh; }
 
-.about-img{ 
-  width: 100%; 
-  height: 100%;  
-  filter:hue-rotate(-80deg) saturate(2) brightness(60%);
-}
+.about-img {
+  width: 100%;
+  height: 100%;
+  filter: hue-rotate(-80deg) saturate(2) brightness(60%); }
 
-.about-header{ 
-  left: 43%;  
-  font-weight: bolder; 
-}
-.about-text{ 
+.about-header {
   font-family: 'Cinzel', serif;
-  padding: 1%; 
-  font-size: 2.4vw; 
-  color: white; 
+  padding: 1%;
+  font-size: 3vw;
+  color: mediumturquoise;
   position: absolute;
   z-index: 3;
+  left: 43%;
+  top: -5%;
+  font-weight: bolder; }
 
-  em{
-    font-style: normal;
-    padding: 0.1em 0;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    position: relative;
-    background: white;
-    background: $g1;
-    display: inline-block;
-    
-    &::before,
-    &::after{
-      content: "";
-      border-radius: 0.2em;
-      background: white;
-      display: inline-block;
-      width: 1em;
-      transform: skewX(-10deg);
-      position: absolute;
-      z-index: -1;
-    }
-    
-    &::before{
-      top: 0;
-      bottom: 0;
-      left: -0.3em;
-      background: $c1;
-    }
-    
-    &::after{
-      top: 0;
-      bottom: 0;
-      right: -0.3em;
-      background: $c2;
-    }
-  }
-}
+.about-text {
+  font-weight: bolder;
+  font-family: 'Cinzel', serif;
+  padding: 1%;
+  font-size: 2vw;
+  color: white;
+  position: absolute;
+  z-index: 3; }
 
-.first-blurb{ 
-  top: 5%; 
-}
+.first-blurb {
+  font-size: 2.4;
+  top: 5%; }
 
-.second-blurb{ 
-  top: 55%; 
-}
-
-
+.second-blurb {
+  top: 60%; }
