@@ -41,8 +41,9 @@
   font-size: 2vw; 
   top: 65%; 
   left: 11%; 
-  transform: rotate(-34deg); 
+  transform: rotate(-39deg); 
 }
+
 .landing-game-tag{ 
   color: whitesmoke; 
   font-size: 2vw; 
@@ -57,6 +58,5 @@
   top: 80%; 
   left: 4%; 
   transform: rotate(-30deg); 
-
 }
 
