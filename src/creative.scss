@@ -1,11 +1,10 @@
 $c1: mediumturquoise;
-$c2: mediumpurple;
+$c2: purple;
 $g1: linear-gradient(to right, $c1, $c2);
 
 .creative{
   font-size: 1.5rem;
-  // position: relative;
-  // z-index: 0;
+
   
   em{
     font-style: normal;
