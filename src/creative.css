@@ -1,0 +1,30 @@
+.creative {
+  font-size: 1.5rem; }
+  .creative em {
+    font-style: normal;
+    padding: 0.1em 0;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    position: relative;
+    background: white;
+    background: linear-gradient(to right, mediumturquoise, mediumpurple);
+    display: inline-block; }
+    .creative em::before, .creative em::after {
+      content: "";
+      border-radius: 0.2em;
+      background: white;
+      display: inline-block;
+      width: 1em;
+      transform: skewX(-10deg);
+      position: absolute;
+      z-index: -1; }
+    .creative em::before {
+      top: 0;
+      bottom: 0;
+      left: -0.3em;
+      background: mediumturquoise; }
+    .creative em::after {
+      top: 0;
+      bottom: 0;
+      right: -0.3em;
+      background: mediumpurple; }
