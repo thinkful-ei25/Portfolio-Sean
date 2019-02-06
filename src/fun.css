@@ -7,14 +7,12 @@
   font-size: 3vw;
   text-transform: uppercase;
   color: purple; }
-
-@media (min-width: 700px) {
-  .fun {
-    font-size: 3vw; } }
-
-@media (min-width: 1400px) {
-  .fun {
-    font-size: 30px; } }
+  @media (min-width: 700px) {
+    .fun {
+      font-size: 3vw; } }
+  @media (min-width: 1400px) {
+    .fun {
+      font-size: 30px; } }
 
 @supports (-webkit-background-clip: text) {
   .fun {
