@@ -8,7 +8,7 @@ const tags=
 const cssTags=['brand-name', 'occupation-name', 'musician-tag', 'interactive-tag', 'game-tag', 'maxmsp-tag']; 
 
 const LandingPage = () => (
-  <div className='landing-container'>
+  <section className='landing-container'>
     {tags.map((tag, i) => (
       <h2 key={i} className={`landing-text landing-${cssTags[i]}`}>{tag}</h2>
     ))}
@@ -16,7 +16,7 @@ const LandingPage = () => (
       className='landing-image' 
       alt='landing' >
     </img>
-  </div>
+  </section>
 
 ); 
 

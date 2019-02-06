@@ -1,7 +1,7 @@
 .landing-container{ 
   position: relative;
   left: 10%; 
-
+  height: 95vh; 
 }
 .landing-image{ 
   width: 90%; 
@@ -19,12 +19,13 @@
 }
 
 .landing-brand-name{ 
-  left: 5%; 
+  font-size: 4vw; 
+  left: 3%; 
 }
 
 .landing-occupation-name{ 
   left: 44%;
-  top: 73%; 
+  top: 74%; 
   transform: rotate(2deg); 
 }
 

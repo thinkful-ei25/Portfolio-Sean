@@ -1,0 +1,41 @@
+.about-container {
+  position: relative;
+  text-align: center;
+  left: 10%;
+  width: 90vw;
+  height: 95vh; }
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  filter: hue-rotate(-80deg) saturate(2) brightness(60%); }
+
+.about-header {
+  font-family: 'Cinzel', serif;
+  padding: 1%;
+  font-size: 3vw;
+  color: mediumturquoise;
+  position: absolute;
+  z-index: 3;
+  left: 43%;
+  top: -5%;
+  font-weight: bolder; }
+
+.about-text {
+  font-weight: bolder;
+  font-family: 'Cinzel', serif;
+  padding: 1%;
+  font-size: 2vw;
+  color: white;
+  position: absolute;
+  z-index: 3; }
+
+.first-blurb {
+  font-size: 2.4;
+  top: 5%; }
+
+a {
+  color: mediumaquamarine; }
+
+.second-blurb {
+  top: 60%; }

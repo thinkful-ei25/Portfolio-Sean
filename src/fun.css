@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Monoton");
+.fun {
+  font-family: "Monoton", Helvetica, sans-serif;
+  background: white;
+  letter-spacing: 5px;
+  display: inline;
+  font-size: 3vw;
+  text-transform: uppercase;
+  color: purple; }
+  @media (min-width: 700px) {
+    .fun {
+      font-size: 3vw; } }
+  @media (min-width: 1400px) {
+    .fun {
+      font-size: 30px; } }
+
+@supports (-webkit-background-clip: text) {
+  .fun {
+    color: transparent;
+    background: linear-gradient(7deg, mediumturquoise 50%, purple 0);
+    -webkit-background-clip: text; } }
