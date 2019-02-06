@@ -1,0 +1,29 @@
+.landing-container{ 
+  position: relative;
+  left: 10%; 
+
+}
+.landing-image{ 
+  width: 90%; 
+  height: 95vh; 
+  filter:hue-rotate(-80deg) saturate(2) brightness(40%);
+  transform: rotate(180deg);
+}
+
+.landing-text{ 
+  color: white; 
+  position: absolute; 
+  z-index: 1;
+  font-family: 'Indie Flower', cursive;
+}
+
+.landing-brand-name{ 
+  left: 5%; 
+}
+
+.landing-occupation-name{ 
+  left: 44%;
+  top: 73%; 
+  transform: rotate(2deg); 
+}
+

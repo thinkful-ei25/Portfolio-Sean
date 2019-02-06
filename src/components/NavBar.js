@@ -1,6 +1,5 @@
 import React from 'react'; 
-import { logo, home, about, projects, contact } from '../images/nav/index.images.nav'; 
-import { linkedin, github, twitter } from '../images/socialMedia/index.images.socialMedia'; 
+import { logo, home, about, projects, contact, linkedin, github, twitter } from '../images/nav/index.images.nav'; 
 import '../styles/nav.css'; 
 
 const navImages = [home, about, projects, contact]; 
