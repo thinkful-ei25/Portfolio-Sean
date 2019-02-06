@@ -22,7 +22,7 @@
   font-family: Geo;
   text-align: center;
   color: white;
-  font-size: 8px;
+  font-size: 1vw;
   margin-top: 0px;
 }
 
@@ -49,10 +49,10 @@
 .nav-button { 
   filter: brightness(0) invert(1);
   margin: 8px auto;
-  width: 24px;
+  width: 3vw;
+  height: 3vw; 
   margin: 0px; 
   font-family: 'icomoon' !important;
-  speak: none;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;

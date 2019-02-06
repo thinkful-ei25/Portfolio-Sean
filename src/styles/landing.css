@@ -11,6 +11,7 @@
 }
 
 .landing-text{ 
+  font-size: 3vw; 
   color: white; 
   position: absolute; 
   z-index: 1;
@@ -25,5 +26,37 @@
   left: 44%;
   top: 73%; 
   transform: rotate(2deg); 
+}
+
+.landing-musician-tag{ 
+  color: whitesmoke; 
+  font-size: 2vw; 
+  top: 75%; 
+  left: 7%; 
+  transform: rotate(10deg); 
+}
+
+.landing-maxmsp-tag{ 
+  color: whitesmoke; 
+  font-size: 2vw; 
+  top: 65%; 
+  left: 11%; 
+  transform: rotate(-34deg); 
+}
+.landing-game-tag{ 
+  color: whitesmoke; 
+  font-size: 2vw; 
+  top: 55%; 
+  left: 10%; 
+  transform: rotate(-22deg); 
+
+}
+.landing-interactive-tag{ 
+  color: whitesmoke; 
+  font-size: 2vw; 
+  top: 80%; 
+  left: 4%; 
+  transform: rotate(-30deg); 
+
 }
 
