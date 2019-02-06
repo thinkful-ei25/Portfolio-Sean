@@ -12,6 +12,10 @@
   filter:hue-rotate(-80deg) saturate(2) brightness(60%);
 }
 
+.about-header{ 
+  left: 43%;  
+  font-weight: bolder; 
+}
 .about-text{ 
   font-family: 'Cinzel', serif;
   padding: 1%; 
