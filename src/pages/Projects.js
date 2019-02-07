@@ -1,6 +1,5 @@
 import React from 'react'; 
 import createYouTube from 'react-youtube-component'; 
-import project from '../images/pages/projects.jpg';
 import { projects } from '../styles/index.styles';  // eslint-disable-line no-unused-vars
 import { fastForward, rewind}  from '../images/transport/index.images.transport'; 
 
@@ -58,7 +57,6 @@ export default class Project extends React.Component{
     render() {
       return (
         <section className='projects-container'>
-          <img className='projects-image' src={project} alt='project'></img>
           <div className="project-select-container">
             <select className='project-select'>
               <optgroup className='project-option'>
