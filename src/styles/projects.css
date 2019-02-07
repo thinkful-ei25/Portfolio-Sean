@@ -54,9 +54,7 @@ iframe {
 }
 
 .project-description-container{ 
-
-  filter: opacity(30%); 
-  background-color: grey; 
+  background-color: rgba(125, 125, 125, 0.3);
   position: absolute;
   left: 20%; 
   top: 60%; 
@@ -66,8 +64,6 @@ iframe {
 }
 
 .project-select-container {  
-
- 
   left: 75%; 
   top: 0%; 
   width: 15%; 
@@ -89,6 +85,17 @@ iframe {
   font-family: Geo; 
 }
 
+.project-title {
 
+  color: white; 
+  font-weight: bolder; 
+  font-size: 4vw; 
+  font-family: 'Indie Flower', cursive; 
+}
 
+.project-description { 
+  color: white; 
+  font-size: 2vw; 
+  font-family: 'Indie Flower', cursive; 
 
+}

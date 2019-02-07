@@ -1,5 +1,4 @@
 import React from 'react'; 
-import landing from '../images/pages/landing.jpg'; 
 import '../styles/landing.css'; 
 
 const tags=
@@ -13,12 +12,11 @@ const LandingPage = () => (
     {tags.map((tag, i) => (
       <h2 key={i} className={`landing-text landing-${cssTags[i]}`}>{tag}</h2>
     ))}
-    <img src={landing} 
+    {/* <img src={landing} 
       className='landing-image' 
       alt='landing' >
-    </img>
+    </img> */}
   </section>
-
 ); 
 
 export default LandingPage; 

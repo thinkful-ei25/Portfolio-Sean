@@ -4,14 +4,14 @@ import project from '../images/pages/projects.jpg';
 import { projects } from '../styles/index.styles';  // eslint-disable-line no-unused-vars
 import { fastForward, rewind}  from '../images/transport/index.images.transport'; 
 
-
 import {
   videoIdRotateLeft, 
   videoIdRotateRight, 
   videoTitleRotateLeft, 
   videoTitleRotateRight, 
   videoDescriptionRotateLeft, 
-  videoDescriptionRotateRight} from '../utils/videoURLContainer'; 
+  videoDescriptionRotateRight} 
+from '../utils/videoURLContainer'; 
 
 const YouTube = createYouTube(); 
 
@@ -93,6 +93,8 @@ export default class Project extends React.Component{
             </img> 
           </div>
           <div className='project-description-container'>
+            <h2 className='project-title'>{this.state.projectTitle}</h2>
+            <p className='project-description'>{this.state.projectDescription}</p>
           </div>
         </section>
       );
