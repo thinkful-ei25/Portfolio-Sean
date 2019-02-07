@@ -47,12 +47,11 @@
 }
 
 .nav-button { 
-  filter: brightness(0) invert(1);
+  color: white; 
   margin: 8px auto;
   width: 3vw;
   height: 3vw; 
   margin: 0px; 
-  font-family: 'icomoon' !important;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
