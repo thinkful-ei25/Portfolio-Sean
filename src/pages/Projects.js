@@ -2,6 +2,7 @@ import React from 'react';
 import createYouTube from 'react-youtube-component'; 
 import project from '../images/pages/projects.jpg';
 import { projects } from '../styles/index.styles';  // eslint-disable-line no-unused-vars
+import { fastForward, playPause, rewind}  from '../images/transport/index.images.transport'; 
 
 
 import {
@@ -30,43 +31,59 @@ export default class Project extends React.Component{
       } 
     }
      
-      onReady = (event) => {
-        if (this.player) this.player.loadVideoById(this.state.id); 
-      };
+    onReady = (event) => {
+      if (this.player) this.player.loadVideoById(this.state.id); 
+    };
+    
+    onPlayer = (player) => {
+      this.player = player;
+    };
      
-      onPlayer = (player) => {
-        this.player = player;
-      };
-     
-      onLeftButtonClick = () => {
-        this.setState({
-          id : videoIdRotateLeft(), 
-          projectTitle : videoTitleRotateLeft(), 
-          projectDescription : videoDescriptionRotateLeft()}, 
-            () => this.player.loadVideoById(this.state.id)); 
-      };
+    onLeftButtonClick = () => {
+      this.setState({
+        id : videoIdRotateLeft(), 
+        projectTitle : videoTitleRotateLeft(), 
+        projectDescription : videoDescriptionRotateLeft()}, 
+          () => this.player.loadVideoById(this.state.id)); 
+    };
 
-      onRightButtonClick = () => { 
-        this.setState({
-          id: videoIdRotateRight(), 
-          projectTitle: videoTitleRotateRight(),
-          projectDescription : videoDescriptionRotateRight()},  
-            () => this.player.loadVideoById(this.state.id)); 
-      }; 
+    onRightButtonClick = () => { 
+      this.setState({
+        id: videoIdRotateRight(), 
+        projectTitle: videoTitleRotateRight(),
+        projectDescription : videoDescriptionRotateRight()},  
+          () => this.player.loadVideoById(this.state.id)); 
+    }; 
    
     render() {
-        return (
-          <section className='projects-container'>
-            <img className='projects-image' src={project} alt='project'></img>
-            <YouTube className='youtube-player'
-              videoId="h_D3VFfhvs4"
-              playerVars={this.state.playerVars}
-              onStateChange={this.onStateChange}
-              onReady={this.onReady}
-              onPlayer={this.onPlayer}
-            />
-            <div className='transport'></div>
-          </section>
-        );
+      return (
+        <section className='projects-container'>
+          <img className='projects-image' src={project} alt='project'></img>
+          <YouTube className='youtube-player'
+            videoId="h_D3VFfhvs4"
+            playerVars={this.state.playerVars}
+            onStateChange={this.onStateChange}
+            onReady={this.onReady}
+            onPlayer={this.onPlayer}
+          />
+          <div className='transport'>
+            <img 
+              className='transport-button rewind' 
+              src={rewind} 
+              alt='rewind transport'
+              onClick={() => this.onLeftButtonClick()}>
+            </img>
+            <img 
+              className='transport-button play-pause' 
+              src={playPause} alt='play-pause transport'>
+            </img>
+            <img 
+              className='transport-button fast-forward' 
+              src={fastForward} alt='fast-forward transport'
+              onClick={() => this.onRightButtonClick()}>
+            </img> 
+          </div>
+        </section>
+      );
     }
 }
