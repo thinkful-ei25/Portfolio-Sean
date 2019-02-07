@@ -2,7 +2,7 @@ import React from 'react';
 import createYouTube from 'react-youtube-component'; 
 import project from '../images/pages/projects.jpg';
 import { projects } from '../styles/index.styles';  // eslint-disable-line no-unused-vars
-import { fastForward, playPause, rewind}  from '../images/transport/index.images.transport'; 
+import { fastForward, rewind}  from '../images/transport/index.images.transport'; 
 
 
 import {
@@ -59,6 +59,19 @@ export default class Project extends React.Component{
       return (
         <section className='projects-container'>
           <img className='projects-image' src={project} alt='project'></img>
+          <div className="project-select-container">
+            <select className='project-select'>
+              <optgroup className='project-option'>
+                <option value="0">Pick A Project:</option>
+                <option value="1">Call Meter</option>
+                <option value="2">Harmonic Space</option>
+                <option value="3">Movements</option>
+                <option value="4">Sequence</option>
+                <option value="5">NOTED</option>
+                <option value="6">Terradiddle</option>
+              </optgroup>
+            </select>
+          </div>
           <YouTube className='youtube-player'
             videoId="h_D3VFfhvs4"
             playerVars={this.state.playerVars}
@@ -72,10 +85,6 @@ export default class Project extends React.Component{
               src={rewind} 
               alt='rewind transport'
               onClick={() => this.onLeftButtonClick()}>
-            </img>
-            <img 
-              className='transport-button play-pause' 
-              src={playPause} alt='play-pause transport'>
             </img>
             <img 
               className='transport-button fast-forward' 
