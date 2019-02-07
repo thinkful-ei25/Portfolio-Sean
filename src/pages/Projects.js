@@ -83,6 +83,8 @@ export default class Project extends React.Component{
               onClick={() => this.onRightButtonClick()}>
             </img> 
           </div>
+          <div className='project-description-container'>
+          </div>
         </section>
       );
     }
