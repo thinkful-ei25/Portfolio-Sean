@@ -2,6 +2,7 @@ import React from 'react';
 import createYouTube from 'react-youtube-component'; 
 import { projects } from '../styles/index.styles';  // eslint-disable-line no-unused-vars
 import { fastForward, rewind}  from '../images/transport/index.images.transport'; 
+import { github, website } from '../images/links/index.images.links'; 
 
 import {
   videoIdRotateLeft, 
@@ -91,6 +92,10 @@ export default class Project extends React.Component{
             </img> 
           </div>
           <div className='project-description-container'>
+            <div className='link-container'>
+              <img className='project-link' src={website} alt='link-to-website'></img>
+              <img className='project-link' src={github} alt='link-to-github'></img>
+            </div>
             <h2 className='project-title'>{this.state.projectTitle}</h2>
             <p className='project-description'>{this.state.projectDescription}</p>
           </div>

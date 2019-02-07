@@ -103,16 +103,67 @@ iframe {
 }
 
 .project-title {
-
-  color: white; 
+  padding: 1%; 
+  font-family: 'Indie Flower', cursive; 
   font-weight: bolder; 
   font-size: 4vw; 
-  font-family: 'Indie Flower', cursive; 
+  color: white; 
+
+  margin: 0px; 
 }
 
 .project-description { 
-  color: white; 
-  font-size: 2vw; 
   font-family: 'Indie Flower', cursive; 
+  font-size: 2vw; 
+  color: white; 
 
+  padding-left: 3%; 
+  margin: 0px; 
 }
+
+.link-container { 
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+
+  float: right; 
+  z-index: 6;
+
+  top: 0%; 
+  right: 50%; 
+  width: 30%; 
+  height: 20%; 
+  margin: 1%; 
+
+  border-radius: 50px; 
+  background-color: rgba(173, 178, 186, 0.3); 
+}
+
+.link-container:before{ 
+  position: absolute;
+  float: right; 
+  z-index: 6;
+ 
+  top: 0%; 
+  right: 0%; 
+  width: 30%; 
+  height: 20%; 
+  margin: 1%; 
+
+  border-radius: 50px; 
+
+  content:''; 
+  background-color: rgba(0, 0, 0, 0.5); 
+ 
+  z-index: 8;
+}
+
+.project-link{ 
+  position: relative; 
+  filter: brightness(0) invert(1);
+  width: 30%; 
+  height: 80%; 
+}
+
+
+
