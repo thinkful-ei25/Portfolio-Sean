@@ -1,0 +1,20 @@
+.projects-container {
+  position: relative;
+  left: 10%;
+  height: 95vh; 
+}
+
+.projects-image {
+  width: 90%;
+  height: 95vh;
+  filter: hue-rotate(-80deg) saturate(2) brightness(40%) blur(20px);
+  transform: rotate(180deg); 
+}
+
+iframe { 
+  position: absolute; 
+  width: 50%; 
+  height: 40%; 
+  left: 20%;  
+  bottom: 52%; 
+}

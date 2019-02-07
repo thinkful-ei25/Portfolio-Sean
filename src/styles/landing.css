@@ -1,63 +1,54 @@
-.landing-container{ 
+.landing-container {
   position: relative;
-  left: 10%; 
-  height: 95vh; 
-}
-.landing-image{ 
-  width: 90%; 
-  height: 95vh; 
-  filter:hue-rotate(-80deg) saturate(2) brightness(40%);
-  transform: rotate(180deg);
-}
+  left: 10%;
+  height: 95vh; }
 
-.landing-text{ 
-  font-size: 3vw; 
-  color: white; 
-  position: absolute; 
+.landing-image {
+  width: 90%;
+  height: 95vh;
+  filter: hue-rotate(-80deg) saturate(2) brightness(40%);
+  transform: rotate(180deg); }
+
+.landing-text {
+  font-size: 3vw;
+  color: white;
+  position: absolute;
   z-index: 1;
-  font-family: 'Indie Flower', cursive;
-}
+  font-family: 'Indie Flower', cursive; }
 
-.landing-brand-name{ 
-  font-size: 4vw; 
-  left: 3%; 
-}
+.landing-brand-name {
+  font-size: 4vw;
+  left: 2%; }
 
-.landing-occupation-name{ 
+.landing-occupation-name {
   left: 44%;
-  top: 74%; 
-  transform: rotate(2deg); 
-}
+  top: 74%;
+  transform: rotate(2deg); }
 
-.landing-musician-tag{ 
-  color: whitesmoke; 
-  font-size: 2vw; 
-  top: 75%; 
-  left: 7%; 
-  transform: rotate(10deg); 
-}
+.landing-musician-tag {
+  color: whitesmoke;
+  font-size: 2vw;
+  top: 75%;
+  left: 7%;
+  transform: rotate(10deg); }
 
-.landing-maxmsp-tag{ 
-  color: whitesmoke; 
-  font-size: 2vw; 
-  top: 65%; 
-  left: 11%; 
-  transform: rotate(-39deg); 
-}
+.landing-maxmsp-tag {
+  color: whitesmoke;
+  font-size: 2vw;
+  top: 65%;
+  left: 11%;
+  transform: rotate(-39deg); }
 
-.landing-game-tag{ 
-  color: whitesmoke; 
-  font-size: 2vw; 
-  top: 55%; 
-  left: 10%; 
-  transform: rotate(-22deg); 
+.landing-game-tag {
+  color: whitesmoke;
+  font-size: 2vw;
+  top: 55%;
+  left: 10%;
+  transform: rotate(-22deg); }
 
-}
-.landing-interactive-tag{ 
-  color: whitesmoke; 
-  font-size: 2vw; 
-  top: 80%; 
-  left: 4%; 
-  transform: rotate(-30deg); 
-}
-
+.landing-interactive-tag {
+  color: whitesmoke;
+  font-size: 2vw;
+  top: 80%;
+  left: 4%;
+  transform: rotate(-30deg); }

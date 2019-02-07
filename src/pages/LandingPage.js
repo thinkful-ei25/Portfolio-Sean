@@ -1,6 +1,7 @@
 import React from 'react'; 
 import landing from '../images/pages/landing.jpg'; 
 import '../styles/landing.css'; 
+
 const tags=
   ['signalflowsean', 'full stack web developer', 'musician', 
    'interactive systems designer', 'unity game dev', 'max msp guru']; 

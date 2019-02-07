@@ -1,12 +1,13 @@
 import React from 'react'; 
 import { NavBar } from './components/index.components'; 
-import { LandingPage, About } from './pages/index.pages'
+import { LandingPage, About, Projects } from './pages/index.pages'
 
 const Root = () => (
   <main>
     <NavBar />
     <LandingPage />
     <About />
+    <Projects />
   </main>
 ); 
 
