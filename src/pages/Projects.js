@@ -93,11 +93,19 @@ export default class Project extends React.Component{
           </div>
           <div className='project-description-container'>
             <div className='link-container'>
-              <img className='project-link' src={website} alt='link-to-website'></img>
-              <img className='project-link' src={github} alt='link-to-github'></img>
+              {/* <a className='project-link' href='https//:google.com'> */}
+                <img className='project-link-image' src={website} alt='link-to-website'></img>
+              {/* </a> */}
+              {/* <a className='project-link' href='https//:google.com'> */}
+                <img className='project-link-image' src={github} alt='link-to-github'></img>
+              {/* </a> */}
             </div>
             <h2 className='project-title'>{this.state.projectTitle}</h2>
             <p className='project-description'>{this.state.projectDescription}</p>
+            <div className='collaboration-footer-container'>
+              <h3 className='collaboration-footer-header'>In collaboration with... </h3>
+              <p className='collaborators'>Brady Fox, Brady Fox Jr, Brady Fox 2d, Brady Fox 3rd</p>
+            </div>
           </div>
         </section>
       );
