@@ -65,6 +65,7 @@ export default class Project extends React.Component{
               onReady={this.onReady}
               onPlayer={this.onPlayer}
             />
+            <div className='transport'></div>
           </section>
         );
     }
