@@ -75,6 +75,7 @@
       font-size: 20px; 
     }
     .landing-brand-name{ 
+      left: 30%; 
       top: 0%; 
       font-size: 30px; 
       transform: rotate(0);
