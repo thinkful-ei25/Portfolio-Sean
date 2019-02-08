@@ -59,7 +59,7 @@ export default class Project extends React.Component{
       return (
         <section className='projects-container'>
           <div className="project-select-container">
-            <select className='project-select'>
+            {/* <select className='project-select'>
               <optgroup className='project-option'>
                 <option value="0">Pick A Project:</option>
                 <option value="1">Call Meter</option>
@@ -69,7 +69,7 @@ export default class Project extends React.Component{
                 <option value="5">NOTED</option>
                 <option value="6">Terradiddle</option>
               </optgroup>
-            </select>
+            </select> */}
           </div>
           <YouTube className='youtube-player'
             videoId="h_D3VFfhvs4"
