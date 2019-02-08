@@ -71,6 +71,7 @@ iframe {
 }
 
 .project-description-container{ 
+  overflow: scroll; 
   background-color: rgba(125, 125, 125, 0.3);
   position: absolute;
   left: 20%; 
