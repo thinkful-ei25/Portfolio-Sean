@@ -34,12 +34,12 @@
 .landing-brand-name {  
   font-size: 3vw;
   left: 7%; 
-  top: -4%; 
+  top: -1%; 
 }
 
 .landing-occupation-name {
-  left: 44%;
-  top: 74%;
+  left: 50%;
+  top: 76%;
   transform: rotate(2deg); }
 
 .landing-musician-tag {

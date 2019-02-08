@@ -204,3 +204,20 @@ iframe {
   color: white; 
 }
 
+@media only screen and (max-width: 380px){ 
+  iframe{ 
+    width: 80%; 
+    left: 10%; 
+  }
+
+  .project-description-container{ 
+    width: 80%; 
+    left: 10%; 
+  }
+
+  .transport{ 
+    width: 80%; 
+    left: 10%; 
+  }
+}
+
