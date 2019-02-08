@@ -6,6 +6,7 @@ import interactive from './interactive.css';
 import landing from './landing.css'; 
 import nav from './nav.css'; 
 import projects from './projects.css';
+import contact from './contact.css'
 
 export { 
   about, 
@@ -15,5 +16,6 @@ export {
   interactive, 
   landing, 
   nav, 
-  projects
+  projects, 
+  contact
 }

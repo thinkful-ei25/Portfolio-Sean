@@ -9,13 +9,11 @@ const cssTags=['brand-name', 'occupation-name', 'musician-tag', 'interactive-tag
 
 const LandingPage = () => (
   <section className='landing-container'>
-    {tags.map((tag, i) => (
-      <h2 key={i} className={`landing-text landing-${cssTags[i]}`}>{tag}</h2>
-    ))}
-    {/* <img src={landing} 
-      className='landing-image' 
-      alt='landing' >
-    </img> */}
+    <div className='landing-flip'>
+      {tags.map((tag, i) => (
+        <h2 key={i} className={`landing-text landing-${cssTags[i]}`}>{tag}</h2>
+      ))}
+    </div>
   </section>
 ); 
 

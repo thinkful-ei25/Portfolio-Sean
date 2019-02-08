@@ -1,6 +1,6 @@
 import React from 'react'; 
 import { NavBar } from './components/index.components'; 
-import { LandingPage, About, Projects } from './pages/index.pages'
+import { LandingPage, About, Projects, Contact } from './pages/index.pages'
 
 const Root = () => (
   <main>
@@ -8,6 +8,7 @@ const Root = () => (
     <LandingPage />
     <About />
     <Projects />
+    <Contact />
   </main>
 ); 
 
