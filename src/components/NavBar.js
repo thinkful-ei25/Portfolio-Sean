@@ -4,7 +4,7 @@ import { logo, home, about, projects, contact, linkedin, github, twitter, hambur
   from '../images/nav/index.images.nav'; 
 import '../styles/nav.css'; 
 
-const navImages = [home, about, projects, contact]; 
+const navImages = [home, about, projects]; 
 const socialMediaImages = [linkedin, github, twitter];
 
 export default class NavBar extends React.Component {

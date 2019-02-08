@@ -14,7 +14,7 @@ export default class Root extends React.Component {
         <LandingPage />
         <About />
         <Projects />
-        <Contact /> 
+        {/* <Contact />  */}
       </main>
     ); 
   }
