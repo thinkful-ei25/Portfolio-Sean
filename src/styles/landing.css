@@ -71,7 +71,40 @@
   transform: rotate(-30deg); }
 
   @media only screen and (max-width: 380px){ 
-    .landing-container{ 
-      /* background-position: 0px;  */
+    .landing-text{ 
+      font-size: 20px; 
     }
+    .landing-brand-name{ 
+      top: 0%; 
+      font-size: 30px; 
+      transform: rotate(0);
+    }
+
+    .landing-maxmsp-tag{ 
+      left: 30%; 
+      top: 45%; 
+      transform: rotate(0);
+    }
+    .landing-occupation-name {
+      left: 30%;
+      top: 65%;
+      transform: rotate(0deg); }
+
+    .landing-musician-tag {
+      color: white; 
+      top: 75%;
+      left: 20%;
+      transform: rotate(0deg); }
+
+    .landing-interactive-tag {
+      color: whitesmoke;
+      top: 85%;
+      left: 25%;
+      transform: rotate(0deg); }
+
+    .landing-game-tag {
+      color: white;
+      top: 55%;
+      left: 20%;
+      transform: rotate(0); }
   }
