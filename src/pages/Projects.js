@@ -104,7 +104,7 @@ export default class Project extends React.Component{
             <p className='project-description'>{this.state.projectDescription}</p>
             <div className='collaboration-footer-container'>
               <h3 className='collaboration-footer-header'>In collaboration with... </h3>
-              <p className='collaborators'>Brady Fox, Brady Fox Jr, Brady Fox 2d, Brady Fox 3rd</p>
+              <p className='collaborators'></p>
             </div>
           </div>
         </section>
