@@ -1,7 +1,7 @@
 .projects-container {
   position: relative;
   overflow: hidden; 
-  left: 10%;
+  /* left: 10%; */
   height: 95vh; 
 }
 

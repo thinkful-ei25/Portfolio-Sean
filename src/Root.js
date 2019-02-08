@@ -1,15 +1,22 @@
-import React from 'react'; 
+import React from 'react';
+// import HamburgerMenu from 'react-hamburger';  
+
+
 import { NavBar } from './components/index.components'; 
 import { LandingPage, About, Projects, Contact } from './pages/index.pages'
 
-const Root = () => (
-  <main>
-    <NavBar />
-    <LandingPage />
-    <About />
-    <Projects />
-    <Contact />
-  </main>
-); 
+export default class Root extends React.Component { 
 
-export default Root; 
+  render() { 
+    return (
+      <main>
+        <NavBar />
+        <LandingPage />
+        <About />
+        <Projects />
+        <Contact /> 
+      </main>
+    ); 
+  }
+}; 
+

@@ -6,6 +6,7 @@ import contact from './envelope.png';
 import linkedin from './linkedin.png';
 import github from './github.png';
 import twitter from './twitter.png'; 
+import hamburger from './hamburger-menu-icon.png'
 
 export { 
   logo, 
@@ -15,6 +16,7 @@ export {
   contact,
   linkedin,
   github,
-  twitter
+  twitter, 
+  hamburger
 }
 

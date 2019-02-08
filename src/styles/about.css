@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   text-align: center;
-  left: 10%;
+  /* left: 10%; */
   height: 95vh; }
   
 .about-container:before{ 
