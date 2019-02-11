@@ -1,17 +1,18 @@
 .landing-container {
   position: relative;
   overflow: hidden; 
-  /* left: 10%; */
-  height: 95vh; 
- } 
+  height: 95vh; } 
 
 .landing-container:before{ 
   background-image: url('../images/pages/landing.jpg') ; 
   background-size: cover; 
   background-position: 0px; 
 
-  -webkit-filter: hue-rotate(-80deg) saturate(2) brightness(40%); 
-  filter: hue-rotate(-80deg) saturate(2) brightness(40%);
+  /* -webkit-filter: hue-rotate(-80deg) saturate(2) brightness(40%);  */
+  /* filter: hue-rotate(-80deg) saturate(2) brightness(40%); */
+
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
   
   content: ''; 
   position: absolute; 
@@ -26,7 +27,7 @@
 .landing-text {
   font-size: 3vw;
   filter:none; 
-  color: white; 
+  color: rgb(201, 221, 255); 
   position: absolute;
   z-index: 3;
   font-family: 'Indie Flower', cursive; }
@@ -43,28 +44,28 @@
   transform: rotate(2deg); }
 
 .landing-musician-tag {
-  color: white;
+  color: rgb(201, 221, 255); 
   font-size: 2vw;
   top: 75%;
   left: 7%;
   transform: rotate(10deg); }
 
 .landing-maxmsp-tag {
-  color: white;
+  color: rgb(201, 221, 255); 
   font-size: 2vw;
   top: 65%;
   left: 11%;
   transform: rotate(-39deg); }
 
 .landing-game-tag {
-  color: white;
+  color: rgb(201, 221, 255); 
   font-size: 2vw;
   top: 55%;
   left: 10%;
   transform: rotate(-22deg); }
 
 .landing-interactive-tag {
-  color: whitesmoke;
+  color: rgb(201, 221, 255); 
   font-size: 2vw;
   top: 80%;
   left: 4%;

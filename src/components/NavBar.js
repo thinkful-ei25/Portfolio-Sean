@@ -1,29 +1,12 @@
 import React from 'react'; 
 import { slide as Menu } from 'react-burger-menu'; 
-import * as Scroll from 'react-scroll'; 
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'; 
-import { logo, home, about, projects, contact, linkedin, github, twitter, hamburger } 
+import { Link, Events, animateScroll as scroll, scrollSpy, } from 'react-scroll'; 
+import { logo, home, about, projects,  linkedin, github, twitter, hamburger } 
   from '../images/nav/index.images.nav'; 
 import '../styles/nav.css'; 
 
 const navImages = [home, about, projects]; 
 const socialMediaImages = [linkedin, github, twitter];
-
-// let Link       = Scroll.Link;
-// let Element    = Scroll.Element;
-// let Events     = Scroll.Events;
-// let scroll     = Scroll.animateScroll;
-// let scrollSpy  = Scroll.scrollSpy;
- 
-// // ES5
-// var React   = require('react');
-// var Scroll  = require('react-scroll');
- 
-// var Link       = Scroll.Link;
-// var Element    = Scroll.Element;
-// var Events     = Scroll.Events;
-// var scroll     = Scroll.animateScroll;
-// var scrollSpy  = Scroll.scrollSpy;
 
 export default class NavBar extends React.Component {
   componentDidMount = () => {
@@ -45,7 +28,6 @@ export default class NavBar extends React.Component {
     Events.scrollEvent.remove('end');
   }
   scrollToTop = () => { 
-    console.log('hi')
     scroll.scrollToTop();
   }
   scrollToBottom = () => {
@@ -67,10 +49,11 @@ export default class NavBar extends React.Component {
 
   render() { 
     return ( 
-      <div>
+      <section className='nav-bar'>
         <Menu 
           customBurgerIcon={<img className='hamburger' src={hamburger} alt='hamburger-menu'></img> } 
-          isOpen={false} id ='nav-bar' 
+          isOpen={true} 
+          id ='nav-bar' 
           pageWrapId={ "page-wrap" }>
           <div>
             <img className='logo' src={logo} alt='logo' />
@@ -107,7 +90,7 @@ export default class NavBar extends React.Component {
               ))}
             </ul>
         </Menu>
-      </div>
+      </section>
     ); 
   }
 };
