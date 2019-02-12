@@ -3,7 +3,7 @@ import { slide as Menu } from 'react-burger-menu';
 import { Link, Events, animateScroll as scroll, scrollSpy, } from 'react-scroll'; 
 import { logo, home, about, projects,  linkedin, github, twitter, hamburger } 
   from '../images/nav/index.images.nav'; 
-import { mobileNavStyle, desktopNavStyle } from '../styles/index.styles'; 
+import { mobileNavStyle } from '../styles/index.styles'; 
 
 const navImages = [home, about, projects]; 
 const socialMediaImages = [linkedin, github, twitter];
@@ -53,34 +53,35 @@ export default class MobileNav extends React.Component{
   }
   render() {
     return ( 
-      <div id='mobile-nav' >
+      <div  >
         <Menu 
           width={'100px'}
+          id='mobile-nav'
           isOpen={false} >
-           <div>
-          <img className='logo-image' src={logo} alt='logo'></img>
-          <p className='brand-name' >sean</p>
-        </div>
-        <div className='nav-button-container'>
-          <Link className='nav-link' onClick={this.scrollToTop}>
-            <img className='nav-button' src={home} alt='home' />
-          </Link>
-          <Link className='nav-link' onClick={this.scrollTo}>
-            <img className='nav-button' src={about} alt='about' />
-          </Link>
-          <Link className='nav-link' onClick={this.scrollToBottom}>
-            <img className='nav-button' src={projects} alt='projects' />
-          </Link>
-        </div>
-        <div className='social-button-container'>
-          <ul className='social-media-list'>
-            {socialMediaImages.map((image, i) => (
-              <li key={i} className='social-media-list-item'>
-                <img key={i} src={image} className='social-media-button' alt='social-media'/>
-              </li>
-              ))}
-            </ul>
-        </div>
+          <div>
+            <img className='logo-image-mobile' src={logo} alt='logo'></img>
+            <p className='brand-name-mobile' >sean</p>
+          </div>
+          <div className='nav-button-container'>
+            <Link className='nav-link' onClick={this.scrollToTop}>
+              <img className='nav-button' src={home} alt='home' />
+            </Link>
+            <Link className='nav-link' onClick={this.scrollTo}>
+              <img className='nav-button' src={about} alt='about' />
+            </Link>
+            <Link className='nav-link' onClick={this.scrollToBottom}>
+              <img className='nav-button' src={projects} alt='projects' />
+            </Link>
+          </div>
+          <div className='social-button-container'>
+            <ul className='social-media-list'>
+              {socialMediaImages.map((image, i) => (
+                <li key={i} className='social-media-list-item'>
+                  <img key={i} src={image} className='social-media-button' alt='social-media'/>
+                </li>
+                ))}
+              </ul>
+          </div>
         </Menu>
       </div>
     );
