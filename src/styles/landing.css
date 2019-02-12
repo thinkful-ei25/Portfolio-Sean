@@ -9,7 +9,7 @@
   background-image: url('../images/pages/landing.jpg') ; 
   background-size: cover; 
   background-position: 0px; 
-  
+
   -webkit-filter: brightness(50%) grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: brightness(50%) grayscale(100%); 
   
@@ -24,7 +24,7 @@
 .landing-text {
   font-size: 35px;
   filter:none; 
-  color: white; 
+  color:white; 
   position: absolute;
   z-index: 3;
   font-family: 'Indie Flower', cursive; }
