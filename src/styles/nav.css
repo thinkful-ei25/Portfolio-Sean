@@ -10,7 +10,7 @@
   top: 0px; 
 
   background-color: black; 
-  z-index: 3; 
+  z-index: 8; 
 }
 
 .logo-image{ 
@@ -48,9 +48,9 @@
 }
 
 .nav-button{ 
-  width: 80%;
-  height: 80%; 
-  
+  width: 70%;
+  height: 90%; 
+
   filter: brightness(0) invert(1); 
 }
 
@@ -77,4 +77,10 @@
   height: 20%; 
 
   filter: brightness(0) invert(1); 
+}
+
+@media only screen and (max-width: 380px){ 
+  #desktop-nav-bar{
+    visibility: hidden; 
+  }
 }
