@@ -9,8 +9,8 @@
   background-size: cover; 
   background-position: 0px; 
 
-  -webkit-filter: brightness(20%) grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: brightness(20%) grayscale(100%); 
+  -webkit-filter: brightness(50%) grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: brightness(50%) grayscale(100%); 
   
   content: ''; 
   position: absolute; 
@@ -18,9 +18,7 @@
   height: 100%; 
   top: 0%; 
   left: 0%; 
-  z-index: -1;
-
-}
+  z-index: -1;}
 
 .landing-text {
   font-size: 35px;
@@ -69,42 +67,101 @@
   left: 4%;
   transform: rotate(-30deg); }
 
-  @media only screen and (max-width: 380px){ 
-    .landing-text{ 
-      font-size: 20px; 
-    }
-    .landing-brand-name{ 
-      left: 30%; 
-      top: 0%; 
-      font-size: 30px; 
-      transform: rotate(0);
-    }
-
-    .landing-maxmsp-tag{ 
-      left: 30%; 
-      top: 45%; 
-      transform: rotate(0);
-    }
-    .landing-occupation-name {
-      left: 30%;
-      top: 65%;
-      transform: rotate(0deg); }
-
-    .landing-musician-tag {
-      color: white; 
-      top: 75%;
-      left: 20%;
-      transform: rotate(0deg); }
-
-    .landing-interactive-tag {
-      color: whitesmoke;
-      top: 85%;
-      left: 25%;
-      transform: rotate(0deg); }
-
-    .landing-game-tag {
-      color: white;
-      top: 55%;
-      left: 20%;
-      transform: rotate(0); }
+@media only screen and (max-width: 380px){ 
+  .landing-text{ 
+    font-size: 20px; 
   }
+  .landing-brand-name{ 
+    left: 30%; 
+    top: 0%; 
+    font-size: 30px; 
+    transform: rotate(0);
+  }
+
+  .landing-maxmsp-tag{ 
+    left: 30%; 
+    top: 45%; 
+    transform: rotate(0);
+  }
+  .landing-occupation-name {
+    left: 30%;
+    top: 65%;
+    transform: rotate(0deg); }
+
+  .landing-musician-tag {
+    color: white; 
+    top: 75%;
+    left: 20%;
+    transform: rotate(0deg); }
+
+  .landing-interactive-tag {
+    color: whitesmoke;
+    top: 85%;
+    left: 25%;
+    transform: rotate(0deg); }
+
+  .landing-game-tag {
+    color: white;
+    top: 55%;
+    left: 20%;
+    transform: rotate(0); }
+
+}
+
+@media only screen and (max-width: 1400px){ 
+  .landing-occupation-name {
+    left: 53%;
+    top: 72%; }
+
+  .landing-brand-name {  
+    left: 9%; 
+    top: -1%; }
+    
+  .landing-musician-tag {
+    top: 79%;
+    left: 8%; }
+    
+  .landing-interactive-tag {
+    color: white; 
+    font-size: 25px;
+    top: 70%;
+    left: 8%;
+    transform: rotate(-62deg); }
+}
+
+
+
+@media only screen and (max-width: 1200px){ 
+  .landing-occupation-name {
+    font-size: 25px;
+    left: 50%;
+    top: 75%; }
+
+  .landing-brand-name {  
+    font-size: 25px; 
+    left: 9%; 
+    top: -1%; }
+    
+  .landing-musician-tag {
+    font-size: 15px; 
+   }
+    
+  .landing-interactive-tag {
+    font-size: 15px; 
+    color: white; 
+
+    top: 80%;
+    transform: rotate(-35deg);
+  }
+  .landing-game-tag {
+    color: white; 
+    font-size: 15px;
+  }
+  .landing-maxmsp-tag {
+    color: white; 
+    font-size: 15px;
+    transform: rotate(10deg);}
+ }
+
+
+

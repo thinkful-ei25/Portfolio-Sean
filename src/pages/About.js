@@ -8,7 +8,7 @@ const About = () => (
         their innate musical creativity and learn about music in fun and interactive ways
         He has worked at a plethora of musical software companies some of which include: 
         <a href='http://www.harmonixmusic.com/'> Harmonix</a>, 
-        <a href='https://getqleek.com/#scroll-1526577506740'>Qleek</a>, and 
+        <a href='https://getqleek.com/#scroll-1526577506740'> Qleek</a>, and 
         <a href='http://www.pointmotioncontrol.com/'> Point Motion</a>. 
         Recently, he graduated from a web development bootcamp called Thinkful and is looking for ways to 
         continue developing his programming skills. 
