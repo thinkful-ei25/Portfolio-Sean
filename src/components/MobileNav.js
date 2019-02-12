@@ -56,7 +56,6 @@ export default class MobileNav extends React.Component{
       <div id='mobile-nav' >
         <Menu 
           width={'100px'}
-          // customBurgerIcon={<img className='hamburger' src={hamburger} alt='hamburger-menu'></img> } 
           isOpen={false} >
            <div>
           <img className='logo-image' src={logo} alt='logo'></img>

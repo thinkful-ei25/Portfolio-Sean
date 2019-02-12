@@ -1,6 +1,7 @@
 #mobile-nav{ 
   visibility: hidden; 
   z-index: 20;
+  position: fixed; 
 }
 /* Position and sizing of burger button */
 .bm-burger-button {

@@ -27,7 +27,7 @@
 .landing-text {
   font-size: 3vw;
   filter:none; 
-  color: rgb(201, 221, 255); 
+  color: white; 
   position: absolute;
   z-index: 3;
   font-family: 'Indie Flower', cursive; }
@@ -44,28 +44,28 @@
   transform: rotate(2deg); }
 
 .landing-musician-tag {
-  color: rgb(201, 221, 255); 
+  color: white; 
   font-size: 2vw;
   top: 75%;
   left: 7%;
   transform: rotate(10deg); }
 
 .landing-maxmsp-tag {
-  color: rgb(201, 221, 255); 
+  color: white; 
   font-size: 2vw;
   top: 65%;
   left: 11%;
   transform: rotate(-39deg); }
 
 .landing-game-tag {
-  color: rgb(201, 221, 255); 
+  color: white; 
   font-size: 2vw;
   top: 55%;
   left: 10%;
   transform: rotate(-22deg); }
 
 .landing-interactive-tag {
-  color: rgb(201, 221, 255); 
+  color: white; 
   font-size: 2vw;
   top: 80%;
   left: 4%;

@@ -9,8 +9,9 @@
   background-image: url('../images/pages/projects.jpg'); 
   background-size: cover; 
 
-  -webkit-filter: hue-rotate(-80deg) saturate(2) brightness(40%) blur(20px);
-  filter: hue-rotate(-80deg) saturate(2) brightness(40%) blur(20px);
+  filter: grayscale(100%); 
+  /* -webkit-filter: hue-rotate(-80deg) saturate(2) brightness(40%) blur(20px);
+  filter: hue-rotate(-80deg) saturate(2) brightness(40%) blur(20px); */
   
   content: ''; 
   position: absolute; 
