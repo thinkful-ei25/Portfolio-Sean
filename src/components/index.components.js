@@ -1,5 +1,9 @@
-import NavBar from './NavBar'; 
+import NavBar from './NavBar';
+import DesktopNav from './DesktopNav'; 
+import MobileNav from './MobileNav'; 
 
 export { 
-  NavBar
+  NavBar, 
+  DesktopNav, 
+  MobileNav
 }

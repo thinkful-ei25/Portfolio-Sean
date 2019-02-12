@@ -1,0 +1,86 @@
+#desktop-nav-bar{
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-between; 
+
+  width: 60px; 
+  height: 100vh; 
+  top: 0px; 
+
+  background-color: black; 
+  z-index: 8; 
+}
+
+.logo-image{ 
+  filter: brightness(0) invert(1); 
+  width: 100%; 
+}
+
+.brand-name{ 
+  text-align: center; 
+  font-family: Geo;
+  color: white; 
+  font-size: 2vw; 
+  margin: 0px; 
+}
+
+.brand-name:hover{ 
+  color: yellow; 
+}
+
+.nav-button-container{  
+  width: 100%;
+  height: 30%; 
+
+  display: flex; 
+  justify-content: space-around;
+  align-content: center; 
+  align-items: center;  
+ 
+  flex-direction: column;  
+}
+
+.nav-link{ 
+  display: flex; 
+  justify-content: center; 
+}
+
+.nav-button{ 
+  width: 70%;
+  height: 90%; 
+
+  filter: brightness(0) invert(1); 
+}
+
+.social-media-list{ 
+  list-style: none;
+
+  padding: 0px; 
+  margin: 0px;
+
+  margin-bottom: 5%;  
+}
+
+.social-media-list-item{ 
+  display: flex; 
+  flex-direction: column;  
+  justify-content: center; 
+  align-items: center; 
+
+  padding-top: 30%; 
+}
+
+.social-media-button{ 
+  width: 20%; 
+  height: 20%; 
+
+  filter: brightness(0) invert(1); 
+}
+
+@media only screen and (max-width: 415px){ 
+  #desktop-nav-bar{
+    visibility: hidden; 
+  }
+}
