@@ -14,7 +14,7 @@ const About = () => (
         continue developing his programming skills. 
       </p>
       <p>You can contact him via <a href='signalflowsean@gmail.com'>email</a>, 
-        <a> linkedin</a>, and <a>twitter</a>. 
+        and or <a href='https://www.linkedin.com/in/sean-nealon-033423124/'>linkedin</a>. 
       </p>
     </div>    
   </section>
