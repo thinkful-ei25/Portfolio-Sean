@@ -1,7 +1,7 @@
 import React from 'react'; 
 import { slide as Menu } from 'react-burger-menu'; 
 import { Link, Events, animateScroll as scroll, scrollSpy, } from 'react-scroll'; 
-import { logo, home, about, projects,  linkedin, github, twitter, hamburger } 
+import { logo, home, about, projects,  linkedin, github, twitter } 
   from '../images/nav/index.images.nav'; 
 import { mobileNavStyle } from '../styles/index.styles'; 
 

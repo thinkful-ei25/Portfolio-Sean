@@ -8,7 +8,6 @@
 .about-container:before{ 
   background-image: url('../images/pages/about.png'); 
 
-
   background-color: #0b0e14; 
   background-repeat: no-repeat; 
   background-position: right;
@@ -37,18 +36,18 @@
   font-weight: bolder; }
 
 .about-text-container{ 
+  padding: 70px 0;
   position: relative; 
   left: 10%; 
   width: 40%; 
   
   overflow: scroll; 
-  margin-top: 10%; 
   font-size: 20px; 
   color: white; 
-  font-family: 'Indie Flower', cursive; 
-}
+  font-family: 'Indie Flower', cursive; }
 
 .about-text {
+
   font-weight: bolder;
   font-family: 'Cinzel', serif;
   padding: 1%;
@@ -63,8 +62,7 @@
 
 .third-line { 
   top: 20%;
-  left: 55%;  
-}
+  left: 55%;  }
 
 a {
   color: mediumaquamarine; }
@@ -79,8 +77,7 @@ a {
     top: -3%; 
 
     background-color: rgba(11, 14, 20, 0.9); 
-    color:white; 
-  }
+    color:white; }
 }
 
 @media only screen and (max-width: 1200px){ 
