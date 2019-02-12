@@ -1,5 +1,6 @@
 .landing-container {
   position: relative;
+  left: 4%; 
   overflow: hidden; 
   height: 95vh; } 
 
@@ -8,11 +9,8 @@
   background-size: cover; 
   background-position: 0px; 
 
-  /* -webkit-filter: hue-rotate(-80deg) saturate(2) brightness(40%);  */
-  /* filter: hue-rotate(-80deg) saturate(2) brightness(40%); */
-
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  -webkit-filter: brightness(20%) grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: brightness(20%) grayscale(100%); 
   
   content: ''; 
   position: absolute; 
@@ -25,7 +23,7 @@
 }
 
 .landing-text {
-  font-size: 3vw;
+  font-size: 35px;
   filter:none; 
   color: white; 
   position: absolute;
@@ -33,7 +31,7 @@
   font-family: 'Indie Flower', cursive; }
 
 .landing-brand-name {  
-  font-size: 3vw;
+  font-size: 35px;
   left: 7%; 
   top: -1%; 
 }
@@ -45,28 +43,28 @@
 
 .landing-musician-tag {
   color: white; 
-  font-size: 2vw;
+  font-size: 25px;
   top: 75%;
   left: 7%;
   transform: rotate(10deg); }
 
 .landing-maxmsp-tag {
   color: white; 
-  font-size: 2vw;
+  font-size: 25px;
   top: 65%;
   left: 11%;
   transform: rotate(-39deg); }
 
 .landing-game-tag {
   color: white; 
-  font-size: 2vw;
+  font-size: 25px;
   top: 55%;
   left: 10%;
   transform: rotate(-22deg); }
 
 .landing-interactive-tag {
   color: white; 
-  font-size: 2vw;
+  font-size: 25px;
   top: 80%;
   left: 4%;
   transform: rotate(-30deg); }

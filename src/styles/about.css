@@ -2,16 +2,18 @@
   position: relative;
   overflow: hidden;
   text-align: center;
-  /* left: 10%; */
+  left: 4%;
   height: 95vh; }
   
 .about-container:before{ 
-  background-image: url('../images/pages/aboutImg.jpg'); 
-  background-size: cover; 
+  background-image: url('../images/pages/about.png'); 
 
-  filter: grayscale(100%); 
-  /* -webkit-filter: hue-rotate(-80deg) saturate(2) brightness(60%);
-  filter: hue-rotate(-80deg) saturate(2) brightness(60%); */
+  background-color: #0b0e14; 
+  background-repeat: no-repeat; 
+  background-position: right;
+  background-position-y: 0%;  
+
+  filter: brightness(100%) grayscale(100%); 
 
   content: ''; 
   position: absolute; 
@@ -31,6 +33,17 @@
   left: 43%;
   top: -5%;
   font-weight: bolder; }
+
+.about-text-container{ 
+  position: relative; 
+  left: 2%; 
+  width: 40%; 
+  
+  margin-top: 10%; 
+  font-size: 20px; 
+  color: white; 
+  font-family: 'Indie Flower', cursive; 
+}
 
 .about-text {
   font-weight: bolder;
@@ -57,11 +70,12 @@ a {
   top: 60%; }
 
 @media only screen and (max-width: 380px){
-  .about-text{ 
-    font-size: 20px; 
-  } 
-  .third-line { 
-    top: 30%;
-    left: 55%;  
+  .about-text-container{ 
+    left: 46%;
+    width: 50%;  
+    top: -3%; 
+
+    background-color: rgba(11, 14, 20, 0.9); 
+    color:white; 
   }
 }

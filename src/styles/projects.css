@@ -1,7 +1,7 @@
 .projects-container {
   position: relative;
   overflow: hidden; 
-  /* left: 10%; */
+  left: 5%;
   height: 95vh; 
 }
 
@@ -9,9 +9,8 @@
   background-image: url('../images/pages/projects.jpg'); 
   background-size: cover; 
 
-  filter: grayscale(100%); 
-  /* -webkit-filter: hue-rotate(-80deg) saturate(2) brightness(40%) blur(20px);
-  filter: hue-rotate(-80deg) saturate(2) brightness(40%) blur(20px); */
+  filter: grayscale(100%) blur(20px) brightness(20%);
+  -webkit-filter: grayscale(100%) blur(20px) brightness(20%); 
   
   content: ''; 
   position: absolute; 
