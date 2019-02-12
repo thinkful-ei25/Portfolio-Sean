@@ -1,0 +1,192 @@
+.nav-bar {
+  background: #181818;
+
+  position: fixed; 
+  width: 28px;
+  height: 100vh;
+
+  top: 0;
+  z-index: 8;
+  min-height: 500px;
+}
+
+.logo {
+  filter: brightness(0) invert(1);
+  display: block;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 28px;
+  height: auto;
+}
+
+.brand-name {
+  margin: 0px; 
+  font-family: Geo;
+  text-align: center;
+  color: white;
+  font-size: 1vw;
+  margin-top: 0px;
+}
+
+.nav-container {
+  display: block;
+  margin-top: 250%; 
+  width: 100%; 
+
+  text-align: center;
+  height: 30%;
+}
+
+.nav-button-container {
+  height: 30%;
+  width: 100%; 
+
+  position: relative;
+  display: block;
+
+  font-size: 22px;
+  color: #4d4d4e;
+
+  text-decoration: none;
+}
+
+.social-media-list-image{ 
+  width: 15px; 
+  height: 15px; 
+}
+
+.nav-button { 
+  width: 40px; 
+  height: 40px; 
+
+  color: white; 
+
+  margin: 0px; 
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.social-media-list {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin-top: 300%;
+  bottom: 0%;
+}
+
+.social-media-list-item {
+  list-style: none;
+  padding: 5px; 
+}
+
+.brand-name:hover {
+  color: yellow;
+}
+
+.nav-button:hover {
+  filter: drop-shadow(16px 16px 20px red) invert(75%);
+}
+
+.social-media-list-image{ 
+  width: 30%;
+  height: 30%;  
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 28px;
+  width: 28px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  visibility: hidden; 
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  width: 2px; 
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 0px; 
+  width: 100px; 
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Individual item */
+.bm-item {
+  width: 100%; 
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 380px){ 
+  .bm-burger-button{
+    width: 15%;
+
+    top: 2%; 
+    left: 4%; 
+  }
+
+  .nav-button { 
+    width: 14vw;
+    height: 11vw; 
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .brand-name {
+    font-size: 40px; 
+  }
+
+}
