@@ -10,25 +10,25 @@
   top: 0px; 
 
   background-color: black; 
-  z-index: 8; 
-}
+  z-index: 8; }
 
 .logo-image{ 
+  filter: brightness(0) invert(0.3); 
+  width: 100%; }
+
+.logo-image:hover{ 
   filter: brightness(0) invert(1); 
-  width: 100%; 
 }
 
 .brand-name{ 
   text-align: center; 
   font-family: Geo;
-  color: white; 
+  color: darkgray; 
   font-size: 25px; 
-  margin: 0px; 
-}
+  margin: 0px; }
 
 .brand-name:hover{ 
-  color: yellow; 
-}
+  color: yellow; }
 
 .nav-button-container{  
   width: 100%;
@@ -39,20 +39,20 @@
   align-content: center; 
   align-items: center;  
  
-  flex-direction: column;  
-}
+  flex-direction: column;  }
 
 .nav-link{ 
   display: flex; 
-  justify-content: center; 
-}
+  justify-content: center; }
 
 .nav-button{ 
   width: 70%;
   height: 90%; 
 
-  filter: brightness(0) invert(1); 
-}
+  filter: brightness(0) invert(0.3); }
+
+.nav-button:hover{ 
+  filter: brightness(0) invert(1); }
 
 .social-media-list{ 
   list-style: none;
@@ -60,8 +60,7 @@
   padding: 0px; 
   margin: 0px;
 
-  margin-bottom: 5%;  
-}
+  margin-bottom: 5%;  }
 
 .social-media-list-item{ 
   display: flex; 
@@ -69,15 +68,16 @@
   justify-content: center; 
   align-items: center; 
 
-  padding-top: 30%; 
-}
+  padding-top: 30%; }
 
 .social-media-button{ 
   width: 20%; 
   height: 20%; 
 
-  filter: brightness(0) invert(1); 
-}
+  filter: brightness(0) invert(0.3); }
+
+.social-media-button:hover{ 
+  filter: brightness(0) invert(1); }
 
 @media only screen and (max-width: 415px){ 
   #desktop-nav-bar{
