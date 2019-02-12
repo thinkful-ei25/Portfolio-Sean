@@ -2,15 +2,18 @@
   position: relative;
   left: 0%; 
   overflow: hidden; 
-  height: 95vh; } 
+  height: 95vh;
+  background-color: blue; 
+  opacity: 0.9;
+  } 
 
 .landing-container:before{ 
   background-image: url('../images/pages/landing.jpg') ; 
   background-size: cover; 
   background-position: 0px; 
 
-  -webkit-filter: brightness(50%) grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: brightness(50%) grayscale(100%); 
+  -webkit-filter: brightness(50%) grayscale(100%) opacity(0.3); /* Safari 6.0 - 9.0 */
+  filter: brightness(100%) grayscale(100%) opacity(0.3); 
   
   content: ''; 
   position: absolute; 
@@ -111,7 +114,7 @@
 @media only screen and (max-width: 1400px){ 
   .landing-occupation-name {
     left: 53%;
-    top: 72%; }
+    top: 78%; }
 
   .landing-brand-name {  
     left: 9%; 
@@ -134,7 +137,7 @@
 @media only screen and (max-width: 1200px){ 
   .landing-occupation-name {
     font-size: 25px;
-    left: 50%;
+    left: 50c%;
     top: 75%; }
 
   .landing-brand-name {  
@@ -144,8 +147,8 @@
     
   .landing-musician-tag {
     font-size: 15px; 
-   }
-    
+  }
+
   .landing-interactive-tag {
     font-size: 15px; 
     color: white; 
@@ -161,7 +164,7 @@
     color: white; 
     font-size: 15px;
     transform: rotate(10deg);}
- }
+}
 
 
 

@@ -8,10 +8,12 @@
 .about-container:before{ 
   background-image: url('../images/pages/about.png'); 
 
+
   background-color: #0b0e14; 
   background-repeat: no-repeat; 
   background-position: right;
   background-position-y: 0%;  
+  background-size: 350px; 
 
   filter: brightness(100%) grayscale(100%); 
 
@@ -39,6 +41,7 @@
   left: 10%; 
   width: 40%; 
   
+  overflow: scroll; 
   margin-top: 10%; 
   font-size: 20px; 
   color: white; 
@@ -78,4 +81,8 @@ a {
     background-color: rgba(11, 14, 20, 0.9); 
     color:white; 
   }
+}
+
+@media only screen and (max-width: 1200px){ 
+  .about-text-container { }
 }
