@@ -24,7 +24,7 @@
 .landing-text {
   font-size: 35px;
   filter:none; 
-  color:white; 
+  color :white; 
   position: absolute;
   z-index: 3;
   font-family: 'Indie Flower', cursive; }
