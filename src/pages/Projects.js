@@ -94,7 +94,6 @@ export default class Project extends React.Component{
         projectDescription: descriptionAtIndex(i)}, 
           () => this.player.loadVideoById(this.state.id)); 
     
-      // console.log(`Option selected:`, selectedOption);
     }
    
     render() {

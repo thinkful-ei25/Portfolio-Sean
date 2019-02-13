@@ -26,8 +26,6 @@ const collaborators = [
 ]
 
 export function liveLinkAtIndex(i){ 
-  
-  console.log('livelink', liveLink[i], 'i', i); 
   return liveLink[i]; 
 }
 
