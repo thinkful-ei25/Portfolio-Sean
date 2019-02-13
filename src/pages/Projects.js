@@ -84,9 +84,17 @@ export default class Project extends React.Component{
           () => this.player.loadVideoById(this.state.id)); 
     }; 
 
-    handleChange = (selectedOption) => {
-      this.setState({ selectedOption });
-      console.log(`Option selected:`, selectedOption);
+    handleChange = (option) => {
+      let i = option.value; 
+      this.setState({
+        liveLink: liveLinkAtIndex(i), 
+        collaborators: collaboratorsAtIndex(i), 
+        id: videoIdsAtIndex(i), 
+        projectTitle: titlesAtIndex(i), 
+        projectDescription: descriptionAtIndex(i)}, 
+          () => this.player.loadVideoById(this.state.id)); 
+    
+      // console.log(`Option selected:`, selectedOption);
     }
    
     render() {
