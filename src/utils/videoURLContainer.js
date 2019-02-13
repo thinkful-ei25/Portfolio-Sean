@@ -25,6 +25,10 @@ const collaborators = [
   'solo', 'George Luther', 'solo'
 ]
 
+export function liveLinkAtIndex(i){ 
+  return liveLink[i]; 
+}
+
 export function videoLinkRotateLeft(){ 
   return shiftListLeft(liveLink); 
 }
@@ -33,12 +37,19 @@ export function videoLinkRotateRight(){
   return shiftListRight(liveLink); 
 }
 
+export function collaboratorsAtIndex(i){ 
+  return collaborators[i]; 
+}
 export function videoCollobaratorsRotateLeft(){ 
   return shiftListLeft(collaborators); 
 }
 
 export function videoCollobaratorsRotateRight() { 
   return shiftListRight(collaborators); 
+}
+
+export function descriptionAtIndex(i){ 
+  return videoDescription[i]; 
 }
 export function videoDescriptionRotateLeft() { 
   return shiftListLeft(videoDescription); 
@@ -47,12 +58,21 @@ export function videoDescriptionRotateLeft() {
 export function videoDescriptionRotateRight() { 
   return shiftListRight(videoDescription);
 }
+
+export function titlesAtIndex(i){ 
+  return videoTitles[i]; 
+}
+
 export function videoTitleRotateLeft() { 
   return shiftListLeft(videoTitles); 
 }
 
 export function videoTitleRotateRight() { 
   return shiftListRight(videoTitles); 
+}
+
+export function videoIdsAtIndex(i){ 
+  return videoIds[i]; 
 }
 
 export function videoIdRotateLeft(){ 

@@ -1,5 +1,6 @@
 import React from 'react'; 
-import createYouTube from 'react-youtube-component'; 
+import createYouTube from 'react-youtube-component';
+import Select from 'react-select';  
 import { projects } from '../styles/index.styles';  // eslint-disable-line no-unused-vars
 import { fastForward, rewind}  from '../images/transport/index.images.transport'; 
 import { github, website } from '../images/links/index.images.links'; 
@@ -19,8 +20,18 @@ from '../utils/videoURLContainer';
 
 const YouTube = createYouTube(); 
 
+const options = [
+  { value: 'movements', label: 'Movements' },
+  { value: 'callMeter', label: 'Harmonic Space' },
+  { value: 'spineSaver', label: 'Spine Saver' }, 
+  { value: 'beatFighter', label: 'BeatFighter'}, 
+  { value: 'universallis', label: 'Universallis'}, 
+  { value: 'teradiddle', label: 'Teradiddle'}, 
+  { value: 'terpstra', label: 'Terpstra'}
+];
 export default class Project extends React.Component{ 
     constructor(props) {
+      
       super(props);
       
       this.state = {
@@ -33,9 +44,12 @@ export default class Project extends React.Component{
         projectTitle: "BeatFighter", 
         projectDescription: "A game where players craft beats that come to life for competition", 
         collaborators: '', 
-        liveLink: {}
+        liveLink: {}, 
+        selectedOption: null
       } 
     }
+
+
      
     onReady = (event) => {
       if (this.player) this.player.loadVideoById(this.state.id); 
@@ -64,22 +78,22 @@ export default class Project extends React.Component{
         projectDescription : videoDescriptionRotateRight()},  
           () => this.player.loadVideoById(this.state.id)); 
     }; 
+
+    handleChange = (selectedOption) => {
+      this.setState({ selectedOption });
+      console.log(`Option selected:`, selectedOption);
+    }
    
     render() {
       return (
         <section className='projects-container'>
           <div className="project-select-container">
-            <select className='project-select'>
-              <optgroup className='project-option'>
-                <option value="0">Pick A Project:</option>
-                <option value="1">Call Meter</option>
-                <option value="2">Harmonic Space</option>
-                <option value="3">Movements</option>
-                <option value="4">Sequence</option>
-                <option value="5">NOTED</option>
-                <option value="6">Terradiddle</option>
-              </optgroup>
-            </select>
+            <Select
+              value={this.state.selectedOption}
+              onChange={this.handleChange}
+              options={options}
+            >
+            </Select>
           </div>
           <YouTube className='youtube-player'
             videoId="h_D3VFfhvs4"
@@ -103,18 +117,17 @@ export default class Project extends React.Component{
           </div>
           <div className='project-description-container'>
             
-              {/* <a className='project-link' href='https//:google.com'> */}
-              {this.state.liveLink.link ? 
-                <div className='link-container'>
-                  <a target='_blank' href={this.state.liveLink.url}>
-                    <img className='project-link-image' src={website} alt='link-to-website'></img> 
-                  </a> 
-                  <a target='_blank' href={this.state.liveLink.github}>
-                    <img className='project-link-image' src={github} alt='link-to-github'></img>
-                  </a>
-                </div>
-                : ''
-              }
+            {this.state.liveLink.link ? 
+              <div className='link-container'>
+                <a target='_blank' href={this.state.liveLink.url}>
+                  <img className='project-link-image' src={website} alt='link-to-website'></img> 
+                </a> 
+                <a target='_blank' href={this.state.liveLink.github}>
+                  <img className='project-link-image' src={github} alt='link-to-github'></img>
+                </a>
+              </div>
+              : ''
+            }
 
     
             <h2 className='project-title'>{this.state.projectTitle}</h2>
