@@ -3,16 +3,20 @@
 
   position: fixed;
 
-  display: flex;
-  flex-direction: column;  
-  justify-content: space-between; 
-
+  width: 100px; 
   height: 100vh; 
   top: 0px; 
 
   background-color: black; 
   z-index: 8; 
   z-index: 20;
+}
+
+.mobile-nav-container{ 
+  height: 100%; 
+  display: flex !important;
+  flex-direction: column;  
+  justify-content: space-between; 
 }
 
 .logo-image-mobile{ 
@@ -87,7 +91,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Individual item */
 .bm-item {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 /* Styling of overlay */
