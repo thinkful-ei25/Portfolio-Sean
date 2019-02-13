@@ -6,14 +6,19 @@ import { fastForward, rewind}  from '../images/transport/index.images.transport'
 import { github, website } from '../images/links/index.images.links'; 
 
 import {
+  videoIdsAtIndex, 
   videoIdRotateLeft, 
   videoIdRotateRight, 
+  titlesAtIndex, 
   videoTitleRotateLeft, 
   videoTitleRotateRight, 
+  liveLinkAtIndex, 
   videoLinkRotateLeft, 
   videoLinkRotateRight, 
+  collaboratorsAtIndex, 
   videoCollobaratorsRotateLeft, 
   videoCollobaratorsRotateRight, 
+  descriptionAtIndex, 
   videoDescriptionRotateLeft, 
   videoDescriptionRotateRight} 
 from '../utils/videoURLContainer'; 
@@ -21,13 +26,13 @@ from '../utils/videoURLContainer';
 const YouTube = createYouTube(); 
 
 const options = [
-  { value: 'movements', label: 'Movements' },
-  { value: 'callMeter', label: 'Harmonic Space' },
-  { value: 'spineSaver', label: 'Spine Saver' }, 
-  { value: 'beatFighter', label: 'BeatFighter'}, 
-  { value: 'universallis', label: 'Universallis'}, 
-  { value: 'teradiddle', label: 'Teradiddle'}, 
-  { value: 'terpstra', label: 'Terpstra'}
+  { value: 0, label: 'Movements' },
+  { value: 1, label: 'Harmonic Space' },
+  { value: 2, label: 'Spine Saver' }, 
+  { value: 3, label: 'BeatFighter'}, 
+  { value: 4, label: 'Universallis'}, 
+  { value: 5, label: 'Teradiddle'}, 
+  { value: 6, label: 'Terpstra'}
 ];
 export default class Project extends React.Component{ 
     constructor(props) {
@@ -43,7 +48,7 @@ export default class Project extends React.Component{
         id: "LKS1qBV7ESQ", 
         projectTitle: "BeatFighter", 
         projectDescription: "A game where players craft beats that come to life for competition", 
-        collaborators: '', 
+        collaborators: 'solo', 
         liveLink: {}, 
         selectedOption: null
       } 
