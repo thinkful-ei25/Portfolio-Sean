@@ -9,6 +9,8 @@ import {
   videoIdRotateRight, 
   videoTitleRotateLeft, 
   videoTitleRotateRight, 
+  videoLinkRotateLeft, 
+  videoLinkRotateRight, 
   videoCollobaratorsRotateLeft, 
   videoCollobaratorsRotateRight, 
   videoDescriptionRotateLeft, 
@@ -30,7 +32,8 @@ export default class Project extends React.Component{
         id: "LKS1qBV7ESQ", 
         projectTitle: "BeatFighter", 
         projectDescription: "A game where players craft beats that come to life for competition", 
-        collaborators: ''
+        collaborators: '', 
+        liveLink: {}
       } 
     }
      
@@ -44,6 +47,7 @@ export default class Project extends React.Component{
      
     onLeftButtonClick = () => {
       this.setState({
+        liveLink: videoLinkRotateLeft(), 
         collaborators: videoCollobaratorsRotateLeft(), 
         id : videoIdRotateLeft(), 
         projectTitle : videoTitleRotateLeft(), 
@@ -53,6 +57,7 @@ export default class Project extends React.Component{
 
     onRightButtonClick = () => { 
       this.setState({
+        liveLink: videoLinkRotateRight(), 
         collaborators: videoCollobaratorsRotateRight(), 
         id: videoIdRotateRight(), 
         projectTitle: videoTitleRotateRight(),
@@ -99,11 +104,13 @@ export default class Project extends React.Component{
           <div className='project-description-container'>
             <div className='link-container'>
               {/* <a className='project-link' href='https//:google.com'> */}
-                <img className='project-link-image' src={website} alt='link-to-website'></img>
-              {/* </a> */}
-              {/* <a className='project-link' href='https//:google.com'> */}
-                <img className='project-link-image' src={github} alt='link-to-github'></img>
-              {/* </a> */}
+              {this.state.liveLink.link ? 
+                <a target='_blank' href={this.state.liveLink.url}>
+                  <img className='project-link-image' src={website} alt='link-to-website'></img> 
+                </a> 
+                : ''
+              }
+              <img className='project-link-image' src={github} alt='link-to-github'></img>
             </div>
             <h2 className='project-title'>{this.state.projectTitle}</h2>
             <p className='project-description'>{this.state.projectDescription}</p>

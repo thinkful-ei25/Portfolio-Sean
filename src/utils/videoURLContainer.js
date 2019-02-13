@@ -4,6 +4,10 @@ const videoIds =
 const videoTitles = 
   ["Movements", "Harmonic Space", "Call Meter","Spine Saver", "BeatFighter","Universallis",  
   "Teradiddle", "Terpstra"]; 
+  const liveLink = [{link: false}, {link:false}, {link: true, url:'https://callmeter.netlify.com/'}, 
+  {link: true, url:'https://spine-saver-client-side.herokuapp.com/'}, {link: false}, {link: false }, 
+  {link: false }, {link: false }]; 
+
 
 const videoDescription = [
   "In this project, specific hand gestures were used to trigger different sound samples. There were six different libraries of samples each consisting of five samples. Each sample library has a different sonic feel (movement). Certain gestural commands were used with specific samples to amplify the targeted expression. This program was designed to create a specific feeling and meaning through arm and hand gestures without the need for language.",
@@ -20,6 +24,14 @@ const collaborators = [
   'solo', 'Robert Bruce Johnson', 'Brady Fox, Jocelyn Santiago, Allister Rooke, Jonathon Garrett', 'solo', 'solo', 
   'solo', 'George Luther', 'solo'
 ]
+
+export function videoLinkRotateLeft(){ 
+  return shiftListLeft(liveLink); 
+}
+
+export function videoLinkRotateRight(){ 
+  return shiftListRight(liveLink); 
+}
 
 export function videoCollobaratorsRotateLeft(){ 
   return shiftListLeft(collaborators); 

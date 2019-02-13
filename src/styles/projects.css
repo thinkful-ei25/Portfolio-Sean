@@ -161,6 +161,7 @@ iframe {
 
 .collaboration-footer-container{ 
   position: relative; 
+  overflow: scroll; 
   bottom: -20%; 
   width: 100%; 
   height: 30%;
