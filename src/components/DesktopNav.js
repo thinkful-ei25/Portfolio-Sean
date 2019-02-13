@@ -1,12 +1,11 @@
 import React from 'react'; 
-import { slide as Menu } from 'react-burger-menu'; 
 import { Link, Events, animateScroll as scroll, scrollSpy, } from 'react-scroll'; 
-import { logo, home, about, projects,  linkedin, github, twitter, hamburger } 
+import { logo, home, about, projects,  linkedin, github } 
   from '../images/nav/index.images.nav'; 
-import { DesktopNavStyle } from '../styles/index.styles'; 
+import { DesktopNavStyle } from '../styles/index.styles'; // eslint-disable-line no-unused-vars
 
 
-const navImages = [home, about, projects];
+// const navImages = [home, about, projects];
 const socialMediaImages = [linkedin, github, ];
 const socialMediaLinks = ['https://www.linkedin.com/in/sean-nealon-033423124/', 'https://github.com/signalflowsean']
 
@@ -62,20 +61,20 @@ export default class DesktopNav extends React.Component {
           <p className='brand-name' >sean</p>
         </div>
         <div className='nav-button-container'>
-          <Link className='nav-link' onClick={this.scrollToTop}>
+          <Link to='' className='nav-link' onClick={this.scrollToTop}>
             <img className='nav-button' src={home} alt='home' />
           </Link>
-          <Link className='nav-link' onClick={this.scrollTo}>
+          <Link to='' className='nav-link' onClick={this.scrollTo}>
             <img className='nav-button' src={about} alt='about' />
           </Link>
-          <Link className='nav-link' onClick={this.scrollToBottom}>
+          <Link to='' className='nav-link' onClick={this.scrollToBottom}>
             <img className='nav-button' src={projects} alt='projects' />
           </Link>
         </div>
         <div className='social-button-container'>
           <ul className='social-media-list'>
             {socialMediaImages.map((image, i) => (
-              <a target='_blank' href={socialMediaLinks[i]}>
+              <a key={i} rel="noopener noreferrer" target='_blank' href={socialMediaLinks[i]}>
                 <li key={i} className='social-media-list-item'>
                   <img key={i} src={image} className='social-media-button' alt='social-media'/>
                 </li>

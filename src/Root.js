@@ -3,7 +3,7 @@ import React from 'react';
 
 
 import { NavBar } from './components/index.components'; 
-import { LandingPage, About, Projects, Contact } from './pages/index.pages'
+import { LandingPage, About, Projects} from './pages/index.pages'
 
 export default class Root extends React.Component { 
 
@@ -14,7 +14,6 @@ export default class Root extends React.Component {
         <LandingPage />
         <About />
         <Projects />
-        {/* <Contact />  */}
       </main>
     ); 
   }

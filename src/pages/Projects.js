@@ -133,17 +133,16 @@ export default class Project extends React.Component{
             
             {this.state.liveLink.link ? 
               <div className='link-container'>
-                <a target='_blank' href={this.state.liveLink.url}>
+                <a target='_blank' rel="noopener noreferrer" href={this.state.liveLink.url}>
                   <img className='project-link-image' src={website} alt='link-to-website'></img> 
                 </a> 
-                <a target='_blank' href={this.state.liveLink.github}>
+                <a target='_blank' rel="noopener noreferrer" href={this.state.liveLink.github}>
                   <img className='project-link-image' src={github} alt='link-to-github'></img>
                 </a>
               </div>
               : ''
             }
 
-    
             <h2 className='project-title'>{this.state.projectTitle}</h2>
             <p className='project-description'>{this.state.projectDescription}</p>
             <div className='collaboration-footer-container'>

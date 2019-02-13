@@ -36,6 +36,7 @@
   font-weight: bolder; }
 
 .about-text-container{ 
+  overflow: scroll !important; 
   padding: 70px 0;
   position: relative; 
   left: 10%; 
