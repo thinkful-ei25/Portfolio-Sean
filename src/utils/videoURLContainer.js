@@ -4,8 +4,8 @@ const videoIds =
 const videoTitles = 
   ["Movements", "Harmonic Space", "Call Meter","Spine Saver", "BeatFighter","Universallis",  
   "Teradiddle", "Terpstra"]; 
-  const liveLink = [{link: false}, {link:false}, {link: true, url:'https://callmeter.netlify.com/'}, 
-  {link: true, url:'https://spine-saver-client-side.herokuapp.com/'}, {link: false}, {link: false }, 
+  const liveLink = [{link: false}, {link:false}, {link: true, url:'https://callmeter.netlify.com/', github: 'https://github.com/thinkful-ei25/billable-client'}, 
+  {link: true, url:'https://spine-saver-client-side.herokuapp.com/', github: 'https://github.com/signalflowsean/spineSaver'}, {link: false}, {link: false }, 
   {link: false }, {link: false }]; 
 
 
