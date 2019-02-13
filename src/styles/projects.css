@@ -219,8 +219,9 @@ iframe {
 
   .project-description-container{ 
     width: 80%;
-    height: 100%;  
+    height: 50%;  
     left: 10%; 
+    overflow: scroll; 
   }
   .project-title{ 
     font-size: 6vw; 
