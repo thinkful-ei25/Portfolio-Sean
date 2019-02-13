@@ -102,10 +102,12 @@ export default class Project extends React.Component{
         <section className='projects-container'>
           <div className="project-select-container">
             <Select
+              placeholder='Select a Project'
               value={this.state.selectedOption}
               onChange={this.handleChange}
               options={options}
             >
+        
             </Select>
           </div>
           <YouTube className='youtube-player'
