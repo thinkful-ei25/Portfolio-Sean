@@ -2,8 +2,7 @@
   position: relative;
   left: 0%; 
   overflow: hidden; 
-  height: 95vh;
-  } 
+  height: 95vh;} 
 
 .landing-container:before{ 
   background-image: url('../images/pages/landing.jpg') ; 
@@ -68,7 +67,59 @@
   left: 4%;
   transform: rotate(-30deg); }
 
-@media only screen and (max-width: 380px){ 
+@media only screen and (max-width: 1400px){ 
+  .landing-occupation-name {
+    left: 53%;
+    top: 78%; }
+
+  .landing-brand-name {  
+    left: 9%; 
+    top: -1%; }
+    
+  .landing-musician-tag {
+    top: 79%;
+    left: 8%; }
+    
+  .landing-interactive-tag {
+    color: white; 
+    font-size: 25px;
+    top: 70%;
+    left: 8%;
+    transform: rotate(-62deg); }
+}
+
+@media only screen and (max-width: 1200px){ 
+  .landing-occupation-name {
+    font-size: 25px;
+    left: 50%;
+    top: 75%; }
+
+  .landing-brand-name {  
+    font-size: 25px; 
+    left: 9%; 
+    top: -1%; }
+    
+  .landing-musician-tag {
+    font-size: 15px; 
+  }
+
+  .landing-interactive-tag {
+    font-size: 15px; 
+    color: white; 
+
+    top: 80%;
+    transform: rotate(-35deg);
+  }
+  .landing-game-tag {
+    color: white; 
+    font-size: 15px;
+  }
+  .landing-maxmsp-tag {
+    color: white; 
+    font-size: 15px;
+    transform: rotate(10deg);}} 
+
+@media only screen and (max-width: 414px){ 
   .landing-text{ 
     font-size: 20px; 
   }
@@ -105,64 +156,7 @@
     color: white;
     top: 55%;
     left: 20%;
-    transform: rotate(0); }
-
-}
-
-@media only screen and (max-width: 1400px){ 
-  .landing-occupation-name {
-    left: 53%;
-    top: 78%; }
-
-  .landing-brand-name {  
-    left: 9%; 
-    top: -1%; }
-    
-  .landing-musician-tag {
-    top: 79%;
-    left: 8%; }
-    
-  .landing-interactive-tag {
-    color: white; 
-    font-size: 25px;
-    top: 70%;
-    left: 8%;
-    transform: rotate(-62deg); }
-}
-
-
-
-@media only screen and (max-width: 1200px){ 
-  .landing-occupation-name {
-    font-size: 25px;
-    left: 50%;
-    top: 75%; }
-
-  .landing-brand-name {  
-    font-size: 25px; 
-    left: 9%; 
-    top: -1%; }
-    
-  .landing-musician-tag {
-    font-size: 15px; 
-  }
-
-  .landing-interactive-tag {
-    font-size: 15px; 
-    color: white; 
-
-    top: 80%;
-    transform: rotate(-35deg);
-  }
-  .landing-game-tag {
-    color: white; 
-    font-size: 15px;
-  }
-  .landing-maxmsp-tag {
-    color: white; 
-    font-size: 15px;
-    transform: rotate(10deg);}
-}
+    transform: rotate(0); }}
 
 
 
