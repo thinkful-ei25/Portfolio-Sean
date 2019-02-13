@@ -5,8 +5,10 @@ import { logo, home, about, projects,  linkedin, github, twitter, hamburger }
   from '../images/nav/index.images.nav'; 
 import { DesktopNavStyle } from '../styles/index.styles'; 
 
-const navImages = [home, about, projects]; 
-const socialMediaImages = [linkedin, github, twitter];
+
+const navImages = [home, about, projects];
+const socialMediaImages = [linkedin, github, ];
+const socialMediaLinks = ['https://www.linkedin.com/in/sean-nealon-033423124/', 'https://github.com/signalflowsean']
 
 export default class DesktopNav extends React.Component { 
 
@@ -73,9 +75,11 @@ export default class DesktopNav extends React.Component {
         <div className='social-button-container'>
           <ul className='social-media-list'>
             {socialMediaImages.map((image, i) => (
-              <li key={i} className='social-media-list-item'>
-                <img key={i} src={image} className='social-media-button' alt='social-media'/>
-              </li>
+              <a target='_blank' href={socialMediaLinks[i]}>
+                <li key={i} className='social-media-list-item'>
+                  <img key={i} src={image} className='social-media-button' alt='social-media'/>
+                </li>
+              </a>
               ))}
             </ul>
         </div>

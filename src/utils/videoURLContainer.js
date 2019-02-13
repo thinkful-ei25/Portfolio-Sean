@@ -16,6 +16,18 @@ const videoDescription = [
   "A symetrical keyboard that is designed to help musicians learn music through geometrical association", 
 ]
 
+const collaborators = [ 
+  'solo', 'Robert Bruce Johnson', 'Brady Fox, Jocelyn Santiago, Allister Rooke, Jonathon Garrett', 'solo', 'solo', 
+  'solo', 'George Luther', 'solo'
+]
+
+export function videoCollobaratorsRotateLeft(){ 
+  return shiftListLeft(collaborators); 
+}
+
+export function videoCollobaratorsRotateRight() { 
+  return shiftListRight(collaborators); 
+}
 export function videoDescriptionRotateLeft() { 
   return shiftListLeft(videoDescription); 
 }

@@ -9,6 +9,8 @@ import {
   videoIdRotateRight, 
   videoTitleRotateLeft, 
   videoTitleRotateRight, 
+  videoCollobaratorsRotateLeft, 
+  videoCollobaratorsRotateRight, 
   videoDescriptionRotateLeft, 
   videoDescriptionRotateRight} 
 from '../utils/videoURLContainer'; 
@@ -27,7 +29,8 @@ export default class Project extends React.Component{
         }, 
         id: "LKS1qBV7ESQ", 
         projectTitle: "BeatFighter", 
-        projectDescription: "A game where players craft beats that come to life for competition"
+        projectDescription: "A game where players craft beats that come to life for competition", 
+        collaborators: ''
       } 
     }
      
@@ -41,6 +44,7 @@ export default class Project extends React.Component{
      
     onLeftButtonClick = () => {
       this.setState({
+        collaborators: videoCollobaratorsRotateLeft(), 
         id : videoIdRotateLeft(), 
         projectTitle : videoTitleRotateLeft(), 
         projectDescription : videoDescriptionRotateLeft()}, 
@@ -49,6 +53,7 @@ export default class Project extends React.Component{
 
     onRightButtonClick = () => { 
       this.setState({
+        collaborators: videoCollobaratorsRotateRight(), 
         id: videoIdRotateRight(), 
         projectTitle: videoTitleRotateRight(),
         projectDescription : videoDescriptionRotateRight()},  
@@ -59,7 +64,7 @@ export default class Project extends React.Component{
       return (
         <section className='projects-container'>
           <div className="project-select-container">
-            {/* <select className='project-select'>
+            <select className='project-select'>
               <optgroup className='project-option'>
                 <option value="0">Pick A Project:</option>
                 <option value="1">Call Meter</option>
@@ -69,7 +74,7 @@ export default class Project extends React.Component{
                 <option value="5">NOTED</option>
                 <option value="6">Terradiddle</option>
               </optgroup>
-            </select> */}
+            </select>
           </div>
           <YouTube className='youtube-player'
             videoId="h_D3VFfhvs4"
@@ -103,7 +108,7 @@ export default class Project extends React.Component{
             <h2 className='project-title'>{this.state.projectTitle}</h2>
             <p className='project-description'>{this.state.projectDescription}</p>
             <div className='collaboration-footer-container'>
-              <h3 className='collaboration-footer-header'>In collaboration with... </h3>
+              <h3 className='collaboration-footer-header'>In collaboration with... {this.state.collaborators} </h3>
               <p className='collaborators'></p>
             </div>
           </div>
