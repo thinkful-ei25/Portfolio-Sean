@@ -21,8 +21,8 @@ const videoDescription = [
   "Having trouble with your posture?! Try Spine Saver. Tracks your slouching metrics and reports back to you your improvement overtime. All you need is a webcam!",
   "This project allows a user to easily craft a beat and have that beat come to life. The user interacts with the transubstantiated beat by moving it through two dimensional space to destroy their opponent. The player needs to listen to the music to be able to effectively anticipate the other player's moves.  It was made with Unity. ", 
   "A three dimensional seuquencer, based on the tersptra keyboard layout. There is a twist on this layout as this projects introduces the concept of time by rotating the keyboard continuously, thus a sequencer!",
-  "A musical physics simulation. Bouncing spheres act as triggers to a beautiful harmonic sequencer. Users can control the playback and looping of spheres by interacting with them", 
-  "A symetrical keyboard that is designed to help musicians learn music through geometrical association", 
+  "A musical physics simulation. Bouncing spheres act as triggers to a beautiful harmonic sequencer. Users can control the playback and looping of spheres by interacting with them.", 
+  "A symetrical keyboard that is designed to help musicians learn music through geometrical association.", 
 ]
 
 const collaborators = [ 
@@ -53,8 +53,8 @@ const videoDescriptionInd = [
   "Having trouble with your posture?! Try Spine Saver. Tracks your slouching metrics and reports back to you your improvement overtime. All you need is a webcam!",
   "This project allows a user to easily craft a beat and have that beat come to life. The user interacts with the transubstantiated beat by moving it through two dimensional space to destroy their opponent. The player needs to listen to the music to be able to effectively anticipate the other player's moves.  It was made with Unity. ", 
   "A three dimensional seuquencer, based on the tersptra keyboard layout. There is a twist on this layout as this projects introduces the concept of time by rotating the keyboard continuously, thus a sequencer!",
-  "A musical physics simulation. Bouncing spheres act as triggers to a beautiful harmonic sequencer. Users can control the playback and looping of spheres by interacting with them", 
-  "A symetrical keyboard that is designed to help musicians learn music through geometrical association", 
+  "A musical physics simulation. Bouncing spheres act as triggers to a beautiful harmonic sequencer. Users can control the playback and looping of spheres by interacting with them.", 
+  "A symetrical keyboard that is designed to help musicians learn music through geometrical association.", 
 ]
 
 const collaboratorsInd = [ 
