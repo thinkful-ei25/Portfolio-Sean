@@ -78,7 +78,7 @@ iframe {
   top: 60%; 
   width: 50%;
   height: 40%;
-  z-index: 3;
+  z-index: 0;
 }
 
 .project-select-container {  
