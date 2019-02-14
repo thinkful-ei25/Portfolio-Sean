@@ -111,7 +111,7 @@ export default class Project extends React.Component{
         <section className='projects-container'>
           <div className="project-select-container">
             <Select
-              placeholder='Select a Project'
+              placeholder='Select a Project...'
               value={this.state.selectedOption}
               onChange={this.handleChange}
               options={options}
@@ -126,12 +126,14 @@ export default class Project extends React.Component{
             onPlayer={this.onPlayer}
           />
           <div className='transport'>
+
             <img 
               className='transport-button rewind' 
               src={rewind} 
               alt='rewind transport'
               onClick={() => this.onLeftButtonClick()}>
             </img>
+            <p className='transport-tutorial'>Use Left and Right Arrows or Dropdown up top to Traverse through Projects</p>
             <img 
               className='transport-button fast-forward' 
               src={fastForward} alt='fast-forward transport'
