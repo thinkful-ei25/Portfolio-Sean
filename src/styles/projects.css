@@ -214,7 +214,7 @@ iframe {
   text-align: center; 
 }
 
-@media only screen and (max-width: 416px){ 
+@media only screen and (max-width: 414px){ 
   .tech-stack{ 
     display: hidden; 
     z-index: -3;
