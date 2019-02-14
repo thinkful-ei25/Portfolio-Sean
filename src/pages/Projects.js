@@ -37,7 +37,8 @@ const options = [
   { value: 4, label: 'BeatFighter'}, 
   { value: 5, label: 'Universallis'}, 
   { value: 6, label: 'Teradiddle'}, 
-  { value: 7, label: 'Terpstra'}
+  { value: 7, label: 'Terpstra'}, 
+  { value: 8, label: 'NOTED'}
 ];
 export default class Project extends React.Component{ 
     constructor(props) {
