@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden; 
   left: 0%;
-  height: 95vh; 
+  height: 100vh; 
 }
 
 .projects-container:before{ 
@@ -38,7 +38,7 @@ iframe {
 
 .transport { 
   background-color: black;
-  z-index: 3;
+  z-index: 0;
   width: 50%;
   height: 10%;
   position: absolute;
@@ -82,7 +82,7 @@ iframe {
 }
 
 .project-select-container {  
-  left: 65%; 
+  left: 30%; 
   top: 0.5%; 
   width: 30%; 
   height: 80%; 
@@ -97,6 +97,7 @@ iframe {
   font-family: Geo;  
   width: 100%; 
   height: 100%; 
+  z-index: 20;
 }
 
 .project-option{ 

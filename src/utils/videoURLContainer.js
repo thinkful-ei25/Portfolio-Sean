@@ -6,7 +6,7 @@ const videoIds =
   "Teradiddle", "Terpstra"]; 
 
   const techStack = [ 
-    'Max-Msp kinect-v1 samplers', 'max-msp kinect-v2 midi', 'Twilio Node Mailer Mongo Express React Node', 
+    'Max-Msp kinect-v1 samplers', 'max-msp kinect-v2 midi', 'Twilio Node-Mailer Mongo Express React Node', 
     'TensorFlow Webcam Mongo Express React Node', 'Unity-3d C#', 'Unity C# Max-Msp Midi', 'Unity-3d C#'
   ]; 
 
@@ -30,7 +30,7 @@ const collaborators = [
   'solo', 'George Luther', 'solo'
 ]
 
-export function techStechAtIndex(i){ 
+export function techStackIndexAt(i){ 
   return techStack[i]; 
 }
 export function techStackRotateLeft(){ 

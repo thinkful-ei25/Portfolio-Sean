@@ -23,7 +23,7 @@ import {
   videoDescriptionRotateRight, 
   techStackRotateLeft, 
   techStackRotateRight, 
-  techStackAtIndex
+  techStackIndexAt
 } 
 from '../utils/videoURLContainer'; 
 
@@ -94,7 +94,7 @@ export default class Project extends React.Component{
     handleChange = (option) => {
       let i = option.value; 
       this.setState({
-        techStack: techStackAtIndex(i), 
+        techStack: techStackIndexAt(i), 
         liveLink: liveLinkAtIndex(i), 
         collaborators: collaboratorsAtIndex(i), 
         id: videoIdsAtIndex(i), 
