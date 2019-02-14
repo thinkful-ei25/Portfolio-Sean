@@ -20,7 +20,11 @@ import {
   videoCollobaratorsRotateRight, 
   descriptionAtIndex, 
   videoDescriptionRotateLeft, 
-  videoDescriptionRotateRight} 
+  videoDescriptionRotateRight, 
+  techStackRotateLeft, 
+  techStackRotateRight, 
+  techStackAtIndex
+} 
 from '../utils/videoURLContainer'; 
 
 const YouTube = createYouTube(); 
@@ -50,7 +54,8 @@ export default class Project extends React.Component{
         projectDescription: "A game where players craft beats that come to life for competition", 
         collaborators: 'solo', 
         liveLink: {}, 
-        selectedOption: null
+        selectedOption: null, 
+        techStack : 'Unity-3d'
       } 
     }
 
@@ -66,6 +71,7 @@ export default class Project extends React.Component{
      
     onLeftButtonClick = () => {
       this.setState({
+        techStack: techStackRotateLeft(), 
         liveLink: videoLinkRotateLeft(), 
         collaborators: videoCollobaratorsRotateLeft(), 
         id : videoIdRotateLeft(), 
@@ -76,6 +82,7 @@ export default class Project extends React.Component{
 
     onRightButtonClick = () => { 
       this.setState({
+        techStack: techStackRotateRight(), 
         liveLink: videoLinkRotateRight(), 
         collaborators: videoCollobaratorsRotateRight(), 
         id: videoIdRotateRight(), 
@@ -97,6 +104,7 @@ export default class Project extends React.Component{
     }
    
     render() {
+
       return (
         <section className='projects-container'>
           <div className="project-select-container">
@@ -151,7 +159,12 @@ export default class Project extends React.Component{
           </div>
           <div className='tech-stack'>
             <p className='tech-stack-title'>Tech Stack</p>
-            
+            {/* <p className='tech-stack-text'>{this.state.techStack}</p> */}
+            <ul>
+              {this.state.techStack.split(' ').map(stack => (
+                <li className='tech-stack-text'>{stack}</li>
+              ))}
+            </ul>
           </div>
         </section>
       );

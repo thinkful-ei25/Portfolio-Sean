@@ -190,7 +190,13 @@ iframe {
  
   z-index: 8;
 } */
+.tech-stack-text{ 
+  color: white; 
+  font-family: Geo; 
+  font-size: 1.2;
+  padding: 5%;  
 
+}
 .collaboration-footer-header{ 
   display: inline; 
   padding: 2%; 

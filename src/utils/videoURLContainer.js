@@ -1,13 +1,18 @@
 const videoIds = 
-
   ["mpbdzB28ZBY","r-0IfVQyIEs", "0VVkfkBlTRI", "zWxYKkLlF6E", "mKhk10QJNKk", "i8MTHqo5mU4", "KlKeKQgeHX8", "Z42SIvyWzhM"]; 
-const videoTitles = 
+
+  const videoTitles = 
   ["Movements", "Harmonic Space", "Call Meter","Spine Saver", "BeatFighter","Universallis",  
   "Teradiddle", "Terpstra"]; 
+
+  const techStack = [ 
+    'Max-Msp kinect-v1 samplers', 'max-msp kinect-v2 midi', 'Twilio Node Mailer Mongo Express React Node', 
+    'TensorFlow Webcam Mongo Express React Node', 'Unity-3d C#', 'Unity C# Max-Msp Midi', 'Unity-3d C#'
+  ]; 
+
   const liveLink = [{link: false}, {link:false}, {link: true, url:'https://callmeter.netlify.com/', github: 'https://github.com/thinkful-ei25/billable-client'}, 
   {link: true, url:'https://spine-saver-client-side.herokuapp.com/', github: 'https://github.com/signalflowsean/spineSaver'}, {link: false}, {link: false }, 
   {link: false }, {link: false }]; 
-
 
 const videoDescription = [
   "In this project, specific hand gestures were used to trigger different sound samples. There were six different libraries of samples each consisting of five samples. Each sample library has a different sonic feel (movement). Certain gestural commands were used with specific samples to amplify the targeted expression. This program was designed to create a specific feeling and meaning through arm and hand gestures without the need for language.",
@@ -24,6 +29,17 @@ const collaborators = [
   'solo', 'Robert Bruce Johnson', 'Brady Fox, Jocelyn Santiago, Allister Rooke, Jonathon Garrett', 'solo', 'solo', 
   'solo', 'George Luther', 'solo'
 ]
+
+export function techStechAtIndex(i){ 
+  return techStack[i]; 
+}
+export function techStackRotateLeft(){ 
+  return shiftListLeft(techStack); 
+}
+
+export function techStackRotateRight(){ 
+  return shiftListRight(techStack); 
+}
 
 export function liveLinkAtIndex(i){ 
   return liveLink[i]; 
