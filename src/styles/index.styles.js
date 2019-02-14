@@ -8,9 +8,11 @@ import nav from './nav.css';
 import desktopNavStyle from './desktop-nav.css'; 
 import mobileNavStyle from './mobile-nav.css'; 
 import projects from './projects.css';
-import contact from './contact.css'
+import contact from './contact.css'; 
+import root from './root.css'; 
 
-export { 
+export {
+  root, 
   about, 
   creative, 
   fun, 
