@@ -1,0 +1,18 @@
+.featured-projects{ 
+  height: 90vh; 
+  width: 100vw; 
+  background-color: black; 
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+}
+
+.featured-project{ 
+  height: 20%; 
+  display: inline-block; 
+  background-color: white; 
+  font-family: Geo; 
+  color: black; 
+  margin: 5%; 
+  border: 1px solid blue; 
+}

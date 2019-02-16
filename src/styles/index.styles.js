@@ -10,8 +10,10 @@ import mobileNavStyle from './mobile-nav.css';
 import projects from './projects.css';
 import contact from './contact.css'; 
 import root from './root.css'; 
+import featuredProjects from './featured-projects.css'; 
 
 export {
+  featuredProjects, 
   root, 
   about, 
   creative, 
