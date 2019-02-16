@@ -2,26 +2,31 @@
   position: relative;
   overflow: hidden;
   text-align: center;
+
+  z-index: 2;
   left: 0%;
+
+  background-color: #0b0e14; 
   height: 95vh; }
   
 .about-container:before{ 
   background-image: url('../images/pages/about.png'); 
-
-  background-color: #0b0e14; 
   background-repeat: no-repeat; 
   background-position: right;
   background-position-y: 0%;  
-  background-size: 350px; 
+  background-position-x: 100%; 
+
+  z-index: 5;
 
   filter: brightness(100%) grayscale(100%); 
 
   content: ''; 
   position: absolute; 
-  width: 100%; 
+
+  width: 40%; 
   min-height: 100vh; 
   top: 0%; 
-  left: 0%; 
+  left: 60%; 
   z-index: -1; }
   
 .about-header {
@@ -36,19 +41,21 @@
   font-weight: bolder; }
 
 .about-text-container{ 
-  overflow: scroll !important; 
-  padding: 70px 0;
   position: relative; 
-  left: 10%; 
-  width: 40%; 
-  
-  overflow: scroll; 
+  left: 5%;
+
+  padding-top: 10%; 
+  padding-left: 2.5%; 
+  padding-right:  2.5%; 
+  width: 50%;
+
+  overflow: scroll !important; 
+  text-align: center; 
   font-size: 1.8vw; 
-  color: white; 
+  color: white;
   font-family: 'Indie Flower', cursive; }
 
 .about-text {
-
   font-weight: bolder;
   font-family: 'Cinzel', serif;
   padding: 1%;
