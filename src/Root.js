@@ -18,7 +18,7 @@ export default class Root extends React.Component {
         <NavBar />
         <LandingPage />
         <About />
-        <FeaturedProjects />
+        {/* <FeaturedProjects /> */}
         <Projects />
       </main>
     ); 
