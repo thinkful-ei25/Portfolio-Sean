@@ -11,8 +11,14 @@ const socialMediaLinks = ['https://www.linkedin.com/in/sean-nealon-033423124/', 
 
 export default class MobileNav extends React.Component{ 
 
+  constructor(props) {
+    super(props);
+    this.state = { width: 0, height: 0 };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
   componentDidMount = () => {
- 
+
     Events.scrollEvent.register('begin', function(to, element) {
       console.log("begin", arguments);
     });
@@ -22,9 +28,18 @@ export default class MobileNav extends React.Component{
     });
  
     scrollSpy.update();
+
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
   }
 
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+  
+
   componentWillUnmount = () => { 
+    window.removeEventListener('resize', this.updateWindowDimensions);
     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
   }
@@ -38,7 +53,7 @@ export default class MobileNav extends React.Component{
   }
 
   scrollTo = () => {
-    scroll.scrollTo(800);
+    scroll.scrollTo(this.state.height);
   }
 
   scrollMore = () => {
