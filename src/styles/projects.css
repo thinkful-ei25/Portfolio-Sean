@@ -4,6 +4,9 @@
   left: 0%;
   height: 100vh; 
 }
+.select{ 
+  font-weight: bolder; 
+}
 
 .projects-container:before{ 
   background-image: url('../images/pages/projects.jpg'); 

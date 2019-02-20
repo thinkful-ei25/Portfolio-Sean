@@ -112,6 +112,7 @@ export default class Project extends React.Component{
         <section className='projects-container'>
           <div className="project-select-container">
             <Select
+              className='select'
               placeholder='Select a Project...'
               value={this.state.selectedOption}
               onChange={this.handleChange}
@@ -166,8 +167,8 @@ export default class Project extends React.Component{
             <p className='tech-stack-title'>Tech Stack</p>
             {/* <p className='tech-stack-text'>{this.state.techStack}</p> */}
             <ul>
-              {this.state.techStack.split(' ').map(stack => (
-                <li className='tech-stack-text'>{stack}</li>
+              {this.state.techStack.split(' ').map((stack, i) => (
+                <li key={i} className='tech-stack-text'>{stack}</li>
               ))}
             </ul>
           </div>
