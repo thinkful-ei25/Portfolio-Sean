@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { NavBar } from './components/index.components'; 
-import { LandingPage, About, Projects} from './pages/index.pages'
+import { LandingPage, About, Projects, FeaturedProjects} from './pages/index.pages'
 import {root} from './styles/index.styles';  // eslint-disable-line no-unused-vars
 
 export default class Root extends React.Component { 
@@ -18,7 +18,7 @@ export default class Root extends React.Component {
         <NavBar />
         <LandingPage />
         <About />
-        {/* <FeaturedProjects /> */}
+        <FeaturedProjects />
         <Projects />
       </main>
     ); 
