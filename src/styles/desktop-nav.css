@@ -14,18 +14,21 @@
 
 .logo-image{ 
   filter: brightness(0) invert(0.3); 
-  width: 100%; }
+  width: 100%; 
+  cursor: pointer}
 
 .logo-image:hover{ 
   filter: brightness(0) invert(1); 
 }
+
 
 .brand-name{ 
   text-align: center; 
   font-family: Geo;
   color: darkgray; 
   font-size: 22px; 
-  margin: 0px; }
+  margin: 0px; 
+  cursor: pointer;}
 
 .brand-name:hover{ 
   color: yellow; }
@@ -48,6 +51,8 @@
 .nav-button{ 
   width: 70%;
   height: 90%; 
+
+  cursor: pointer;
 
   filter: brightness(0) invert(0.3); }
 

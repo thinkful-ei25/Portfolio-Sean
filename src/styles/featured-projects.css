@@ -1,29 +1,8 @@
-.featured-projects{ 
-  height: 90vh; 
-  position: relative; 
-  left: 5%; 
-  width: 95%; 
+.project-container{ 
+  height: 100vh; 
+  width: 100vw; 
   background-color: black; 
   display: flex; 
   justify-content: space-around; 
-  align-items: center;  
+  align-items: center; 
 }
-
-.featured-project{ 
-  height: 20%; 
-  width: 20%; 
-  display: inline-block; 
-  background-color: white; 
-  font-family: Geo; 
-  color: black; 
-  margin: 5%; 
-  border: 1px solid blue; 
-}
-
-.collapsible-content{
-  height: 20%; 
-  width: 20%; 
-  background-color: lightblue;  
-}
-
-
