@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "react": "^16.7.0",
+    "react-anime": "^2.2.0",
     "react-burger-menu": "^2.6.3",
-    "react-collapsible-component": "^1.1.2",
     "react-dom": "^16.7.0",
     "react-scripts": "^2.1.5",
     "react-scroll": "^1.7.10",

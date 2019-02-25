@@ -1,8 +1,18 @@
-.project-container{ 
+.featured-proj-container{ 
+  position: relative; 
   height: 100vh; 
-  width: 100vw; 
+  width: 95%; 
+  left: 5%; 
   background-color: black; 
   display: flex; 
   justify-content: space-around; 
   align-items: center; 
+}
+.toggle:checked ~ .one{ 
+  -webkit-animation: not-open 6.4s 1  1.3s linear forwards,
+}
+
+@keyframes not-open{ 
+  from { top: 0%; }
+  to { top: 40%; }
 }
