@@ -51,13 +51,13 @@ export default class Project extends React.Component{
           color: 0,
           controls: 1
         }, 
-        id: "LKS1qBV7ESQ", 
-        projectTitle: "BeatFighter", 
-        projectDescription: "A game where players craft beats that come to life for competition", 
-        collaborators: 'solo', 
-        liveLink: {}, 
+        id: "0VVkfkBlTRI", 
+        projectTitle: "Call Meter", 
+        projectDescription: "CallMeter automates the tedious task of tracking billable time on the phone by creating invoices for clients by automatically tracking minutes spent and programmatically generating invoices unique to each of your clients.", 
+        collaborators: 'Twilio Node-Mailer Mongo Express React Node', 
+        liveLink: {link: true, url:'https://callmeter.netlify.com/', github: 'https://github.com/thinkful-ei25/CallMeter-client'}, 
         selectedOption: null, 
-        techStack : 'Unity-3d'
+        techStack : 'Twilio Node-Mailer Mongo Express React Node'
       } 
     }
 
