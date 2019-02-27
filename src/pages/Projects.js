@@ -61,8 +61,6 @@ export default class Project extends React.Component{
       } 
     }
 
-
-     
     onReady = (event) => {
       if (this.player) this.player.loadVideoById(this.state.id); 
     };
