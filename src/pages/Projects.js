@@ -30,15 +30,15 @@ from '../utils/videoURLContainer';
 const YouTube = createYouTube(); 
 
 const options = [
-  { value: 0, label: 'Movements' },
-  { value: 1, label: 'Harmonic Space' },
-  { value: 2, label: 'Call Meter' },
-  { value: 3, label: 'Spine Saver' }, 
-  { value: 4, label: 'BeatFighter'}, 
-  { value: 5, label: 'Universallis'}, 
-  { value: 6, label: 'Teradiddle'}, 
-  { value: 7, label: 'Terpstra'}, 
-  { value: 8, label: 'NOTED'}
+
+  { value: 0, label: 'Movements'},
+  { value: 1, label: 'Harmonic Space'},
+  { value: 2, label: 'Spine Saver' }, 
+  { value: 3, label: 'BeatFighter'}, 
+  { value: 4, label: 'Universallis'}, 
+  { value: 5, label: 'Teradiddle'}, 
+  { value: 6, label: 'Terpstra'}, 
+  { value: 7, label: 'NOTED'}
 ];
 export default class Project extends React.Component{ 
     constructor(props) {
