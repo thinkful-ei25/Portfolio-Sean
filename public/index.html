@@ -25,7 +25,10 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <link href="https://fonts.googleapis.com/css?family=Monofett&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet"> -->
     <!-- CINZEL FONT  -->
+
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <!-- INDIE FLOWER FLONT -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -36,10 +39,42 @@
       href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" 
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
       crossorigin="anonymous">
+    <script src="https://unpkg.com/css-doodle@0.7.3/css-doodle.min.js"></script>
       
     <title>Signalflowsean | Web Developer</title>
   </head>
   <body>
+      <css-doodle style="width: 100%; position: fixed;z-index: 0;">
+          :doodle {
+            @grid: 12 / 100vmax;
+            background: #0a0c27;
+            filter: blur(1.5px);
+            transform: scale(1.1)
+            
+          }
+        
+          @shape: circle;
+          background: hsla(@index(), 70%, 68%, @rand(0.6));
+          transform:
+            scale(@rand(.2, 1.2))
+            translate(
+              @rand(-50%, 50%), @rand(-50%, 50%)
+            );
+    
+          animation: test infinite @r(100s, 150s) linear; 
+    
+          @keyframes test { 
+            0%{ 
+              transform: translate3d(0, 0, 0)
+            }
+            50%{ 
+              transform: translate3d(@r(-500%, 1000%), @r(-500%, 1500%), 0); 
+            }
+            100%{ 
+              transform: translate3d(0, 0, 0)
+            }
+          }    
+      </css-doodle>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
