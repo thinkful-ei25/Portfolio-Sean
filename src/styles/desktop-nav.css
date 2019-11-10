@@ -13,6 +13,7 @@
   z-index: 8; }
 
 .logo-image{ 
+  margin-top: 7px; 
   filter: brightness(0) invert(0.3); 
   width: 100%; }
 

@@ -72,7 +72,7 @@ export default class DesktopNav extends React.Component {
       <div id='desktop-nav-bar'>
         <div>
           <img className='logo-image' src={logo} alt='logo'></img>
-          <p className='brand-name' >sean</p>
+          
         </div>
         <div className='nav-button-container'>
           <Link to='' className='nav-link' onClick={this.scrollToTop}>

@@ -12,7 +12,7 @@ export default class Root extends React.Component {
     
         <a className='resume' href='https://drive.google.com/file/d/1miSd8HoCG8PAeJf2ATOKtrfA0eIAK9be/view?usp=sharing'
         rel="noopener noreferrer" target='_blank'
-        >  Resume
+        >  <span className="resume-text">Resume</span>
         </a>
 
         <NavBar />

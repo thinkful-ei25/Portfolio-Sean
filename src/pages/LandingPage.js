@@ -8,7 +8,9 @@ const cssTags=['occupation-name', 'musician-tag', 'interactive-tag', 'game-tag',
 
 const LandingPage = () => (
   <section className='landing-container'>
-    <h1 className='landing-brand-name'>signalflowsean</h1> 
+    <div className="header">
+      <h1 className='landing-brand-name'>signalflowsean</h1> 
+    </div>
     <div className='landing-flip'>
       {tags.map((tag, i) => (
         <h3 key={i} className={`landing-text landing-${cssTags[i]}`}>{tag}</h3>

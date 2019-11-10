@@ -7,22 +7,26 @@
 } 
 
 h1 { 
+  margin-top:25px; 
   font-family: 'Monofett', cursive;
   z-index: 3;
   color: black;  
+  font-size: 60px;
+  padding-left: 50px;
 }
 
-/* .header {
+.header {
+  left: 20px; 
   z-index: 2;
   position: fixed; 
   width: 100vw;
-  height: 50px;
+  height: 60px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
   border-radius: 5px;
   background-color: rgba(255, 255, 255, .15);
   
   backdrop-filter: blur(10px);
-} */
+}
 
 .landing-container:before{ 
   /* background-image: url('../images/pages/landing.jpg') ;  */
