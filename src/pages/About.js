@@ -13,8 +13,10 @@ const About = () => (
           <a href='http://www.pointmotioncontrol.com/'> Point Motion</a>. 
         </p>
         <p>You can contact him via <a target='_blank' rel="noopener noreferrer" href='mailto: signalflowsean@gmail.com'>email</a>, 
-          <a target='_blank' rel="noopener noreferrer" href='https://github.com/signalflowsean'> github</a>, and 
-          <a href='https://www.linkedin.com/in/sean-nealon-033423124/'> linkedin</a>. 
+          <a target='_blank' rel="noopener noreferrer" href='https://github.com/signalflowsean'> github</a>, and <a href='https://www.linkedin.com/in/sean-nealon-033423124/'> linkedin</a>. 
+        </p>
+        <br></br>
+        <p>View letter of reference from <a target='_blank' rel="noopener noreferrer" href={require('../../src/images/helen-recommendation.pdf')}>Helen McWilliams</a> from Harmonix and <a target='_blank' rel="noopener noreferrer" href={require('../../src/images/ismail-recomendation.pdf')}>Ismail Salhi</a> from Qleek. 
         </p>
       </div>
     </div>
