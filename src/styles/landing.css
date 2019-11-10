@@ -111,7 +111,7 @@ h1 {
   font-size: 25px;
   /* top: 80%; */
   /* left: 4%; */
-  transform: rotate(-17deg); 
+  transform: rotate(-7deg); 
 }
 
 @media only screen and (max-width: 1400px){ 
@@ -135,7 +135,7 @@ h1 {
     font-size: 25px;
     /* top: 70%; */
     /* left: 8%; */
-    transform: rotate(-40deg); 
+    transform: rotate(11deg); 
   }
 }
 
@@ -161,7 +161,7 @@ h1 {
     color: white; 
 
     top: 80%;
-    transform: rotate(5deg);
+    transform: rotate(-5deg);
   }
   .landing-game-tag {
     color: white; 
