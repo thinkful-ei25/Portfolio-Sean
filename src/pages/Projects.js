@@ -156,7 +156,7 @@ export default class Project extends React.Component{
             <h2 className='project-title'>{this.state.projectTitle}</h2>
             <p className='project-description'>{this.state.projectDescription}</p>
             <div className='collaboration-footer-container'>
-              <h3 className='collaboration-footer-header'>In collaboration with... {this.state.collaborators} </h3>
+              <h3 className='collaboration-footer-header'>In collaboration with {this.state.collaborators} </h3>
               <p className='collaborators'></p>
             </div>
           
