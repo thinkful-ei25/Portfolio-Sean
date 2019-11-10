@@ -14,7 +14,7 @@
 
 .logo-image{ 
   margin-top: 7px; 
-  filter: brightness(0) invert(0.3); 
+  filter: brightness(0) invert(0.7); 
   width: 100%; }
 
 .logo-image:hover{ 
@@ -50,7 +50,7 @@
   width: 70%;
   height: 90%; 
 
-  filter: brightness(0) invert(0.3); }
+  filter: brightness(0) invert(0.7); }
 
 .nav-button:hover{ 
   filter: brightness(0) invert(1); }

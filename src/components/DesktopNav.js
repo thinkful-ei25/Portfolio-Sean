@@ -85,7 +85,7 @@ export default class DesktopNav extends React.Component {
             <img className='nav-button' src={projects} alt='projects' />
           </Link>
         </div>
-        <div className='social-button-container'>
+        {/* <div className='social-button-container'>
           <ul className='social-media-list'>
             {socialMediaImages.map((image, i) => (
               <a key={i} rel="noopener noreferrer" target='_blank' href={socialMediaLinks[i]}>
@@ -95,7 +95,7 @@ export default class DesktopNav extends React.Component {
               </a>
               ))}
             </ul>
-        </div>
+        </div> */}
       </div>
     ); 
   }
