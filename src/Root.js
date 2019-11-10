@@ -10,7 +10,7 @@ export default class Root extends React.Component {
     return (
       <main>
     
-        <a className='resume' href='https://drive.google.com/file/d/1miSd8HoCG8PAeJf2ATOKtrfA0eIAK9be/view?usp=sharing'
+        <a className='resume' href='https://docs.google.com/document/d/1pzVWlIv0nUqCD43vIywl-p74XjWfG3MkMRdZJxXnkwI/edit?usp=sharing'
         rel="noopener noreferrer" target='_blank'
         >  <span className="resume-text">Resume</span>
         </a>
