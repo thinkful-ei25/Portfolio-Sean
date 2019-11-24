@@ -1,8 +1,9 @@
 .landing-container {
   /* position: relative; */
-  padding-left: 50px;
+  /* padding-left: 50px; */
   /* left: 0%;  */
   overflow: hidden; 
+
   height: 95vh;
 } 
 
@@ -15,15 +16,22 @@ h1 {
   padding-left: 70px;
 }
 
+.landing-text-tags-container { 
+
+}
+
 .header {
-  left: 20px; 
+  margin-left: 60px; 
+  padding: 0 2%; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
   z-index: 2;
   position: fixed; 
-  width: 100vw;
+  width: calc(96% - 60px);
   height: 60px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, .15);
+  background-color: rgba(255, 255, 255, .45);
   
   backdrop-filter: blur(20px);
 }
@@ -46,6 +54,9 @@ h1 {
 }
 
 .landing-flip { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
   height: 100%;
   width: 100%;
   max-width: 600px;
@@ -68,15 +79,27 @@ h1 {
   font-size: 50px;
   filter:none; 
   color :white; 
-  /* position: absolute; */
+  
   z-index: 5;
-  font-family: 'Indie Flower', cursive; }
+  font-family: 'Indie Flower', cursive;
+  animation: example1 2000ms 
+}
+
+  @keyframes example1 {
+    0%  { 
+    transform: translateX(200%); 		
+    }
+    100% { 
+      transform: translateX(0%); 
+    }
+  }
 
 .landing-brand-name {  
-  line-height: 0; 
-  color: white;
-  position: absolute;
+  height: 100%; 
+  color:black;
   font-size: 50px;
+  margin: 0; 
+  padding: 0; 
 }
 
 .landing-occupation-name {

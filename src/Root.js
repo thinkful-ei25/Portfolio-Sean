@@ -9,12 +9,14 @@ export default class Root extends React.Component {
   render() { 
     return (
       <main>
-    
-        <a className='resume' href={require('../src/images/resume.pdf')}
-        rel="noopener noreferrer" target='_blank'
+        <div className="header">
+          <h1 className='landing-brand-name'>signalflowsean</h1> 
+          <a className='resume' href={require('../src/images/resume.pdf')}
+          rel="noopener noreferrer" target='_blank'
         >  <span className="resume-text">Resume</span>
         </a>
-
+      </div>
+  
         <NavBar />
         <LandingPage />
         <About />
