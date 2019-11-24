@@ -26,7 +26,7 @@ h1 {
   display: flex; 
   justify-content: space-between; 
   align-items: center;
-  z-index: 2;
+  z-index: 5;
   position: fixed; 
   width: calc(96% - 60px);
   height: 60px;
